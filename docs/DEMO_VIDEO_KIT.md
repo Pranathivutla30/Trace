@@ -28,47 +28,61 @@ is ready to paste into an AI text-to-speech tool for the voice-over.
 
 ## SHOT LIST + VOICE-OVER SCRIPT
 
-Record each segment, then lay the matching narration over it. Timings are a
-guide; the full read is ~330 words ≈ 2:25 at a calm pace.
+One patient. One health story. One investigation. The narration mirrors TRACE's
+core experience: *something changed → rewind → connect → what's missing → how
+sure → what if → what paths.* Full read ~340 words ≈ 2:25 at a calm pace.
 
-### 1 — Title + problem (0:00–0:18)  ·  show: dashboard loading / welcome screen
+### 1 — Title + the big idea (0:00–0:20)  ·  show: welcome screen / dashboard loading
 > "This is TRACE — Temporal Reasoning and Analysis for Clinical Exploration.
-> Wearables record weeks of data, but people struggle to see *when* their
-> pattern actually changed. TRACE finds that moment — and we built it entirely
-> with Kiro."
+> Most health AI looks at today and predicts a disease. TRACE does the opposite:
+> it starts from the *change* and reasons backward and forward through time to
+> find where a person's health story diverged. And we built it entirely with
+> Kiro."
 Caption: **TRACE · Find where the story changed**
 
-### 2 — Onboarding (0:18–0:33)  ·  show: complete the short onboarding, type a name
-> "You start with a quick profile, saved right in the browser. TRACE
-> personalizes the experience — but your profile never enters the analysis."
-Caption: **Personalized · profile stays separate from the data**
+### 2 — Baseline: what's normal (0:20–0:40)  ·  show: onboarding briefly, then the Baseline card
+> "After a quick local profile, TRACE first learns what's normal *for this
+> person* — their own baseline across sleep, heart-rate variability, resting
+> heart rate, activity and temperature. Not a population average — their own."
+Caption: **Personal baseline · their normal, not a population average**
 
-### 3 — Synthetic: the seven features (0:33–1:28)  ·  show: scroll each card slowly
-> "On a controlled 30-day patient, TRACE answers seven questions. Your personal
-> baseline — what's normal for you. Where it changed — the first day signals
-> shifted together. What changed together — the order they moved. What to learn
-> next — the missing context that matters most. How sure TRACE is — confidence
-> in its own reading, not a health risk. What if — how much each signal mattered.
-> And where things could go next. Everything is computed from the data, and it's
-> clearly non-diagnostic."
-Caption: **7 reasoning views · all computed, non-diagnostic**
+### 3 — Where it changed (the hero) (0:40–1:05)  ·  show: "Where It Changed" card, the orange change line
+> "Then the hero of TRACE: it rewinds the timeline to find the earliest
+> coordinated shift. Here, the story didn't start when symptoms would — it
+> started around Day minus ten, when fatigue and sleep began moving, followed by
+> HRV, resting heart rate, and activity."
+Caption: **Earliest coordinated shift · around Day −10**
 
-### 4 — Real data + trained model (1:28–2:05)  ·  show: switch to Real f16, scroll to ML Anomaly card
-> "Then we validate on real PhysioNet wearable data. TRACE pinpoints the change
-> around minute thirteen. A trained anomaly model — learned from thirty-five
-> participants and tested on one it had never seen — scores how unusual each
-> moment looks. It's a pattern, never a diagnosis."
-Caption: **Real PhysioNet data · trained model · held-out evaluation**
+### 4 — Connect, and what's missing (1:05–1:35)  ·  show: "What Changed Together" then "What to Learn Next"
+> "TRACE connects those signals into one chain instead of separate alarms — an
+> association to investigate, never a diagnosis. Then it flags what it *doesn't*
+> know — here, a subjective stress reading — the missing piece that would most
+> reduce uncertainty."
+Caption: **Signals connected · and the most valuable missing evidence**
 
-### 5 — Built with Kiro (2:05–2:28)  ·  show: .kiro/specs + steering files (or Kiro chat)
-> "We built TRACE spec-driven in Kiro. Requirements, design, and tasks drove the
-> whole pipeline, and steering docs enforced our safety rules — non-diagnostic
-> language and strict data separation — on every single change."
-Caption: **Built with Kiro · spec-driven + steering**
+### 5 — How sure, and what-if (1:35–2:00)  ·  show: "Can We Trust This" gauge, then "What If" sliders
+> "Crucially, TRACE checks itself: strong pattern, good data, but confidence of
+> sixty-seven percent — honest about its own certainty. And it's explainable —
+> a what-if shows exactly which signals drove the result, so it's never a black
+> box."
+Caption: **Self-check confidence · explainable what-if**
 
-### 6 — Close (2:28–2:35)  ·  show: dashboard, URL visible
-> "TRACE — find where the story changed. It's live — link below."
-Caption: **Live demo + GitHub in the description**
+### 6 — Real data + trained model (2:00–2:25)  ·  show: switch to Real f16, the ML Anomaly card
+> "Finally, we validate on *real* PhysioNet wearable data. TRACE detects the
+> change around minute thirteen, and a trained anomaly model — learned from
+> thirty-five people and tested on one it had never seen — scores how unusual
+> each moment looks. A pattern, never a diagnosis."
+Caption: **Real PhysioNet data · trained, held-out model**
+
+### 7 — Built with Kiro + close (2:25–2:40)  ·  show: .kiro/ specs + steering, then dashboard with URL
+> "We built TRACE spec-driven in Kiro, with steering docs enforcing our safety
+> rules on every change. TRACE — find where the story changed. It's live, link
+> below."
+Caption: **Built with Kiro · spec-driven + steering · live demo below**
+
+> Accuracy notes for recording: say what's on your screen — the change point
+> reads **Day −10**, and the onset chain is **fatigue → sleep → HRV → resting HR
+> → activity**. Keep "non-diagnostic" audible at least once.
 
 ---
 
