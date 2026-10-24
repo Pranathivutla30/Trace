@@ -1,0 +1,421 @@
+{
+  "model": {
+    "model_type": "IsolationForest",
+    "features": [
+      "heart_rate_bpm",
+      "hrv_rmssd_ms",
+      "eda_mean",
+      "temperature_c",
+      "activity_mean"
+    ],
+    "random_state": 42,
+    "model_path": "models/trace_transition_isolation_forest.joblib"
+  },
+  "training_summary": {
+    "training_participants": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "f01",
+      "f02",
+      "f03",
+      "f04",
+      "f05",
+      "f06",
+      "f07",
+      "f08",
+      "f09",
+      "f10",
+      "f11",
+      "f12",
+      "f13",
+      "f14_b",
+      "f15",
+      "f17",
+      "f18"
+    ],
+    "training_participant_count": 35,
+    "training_window_count": 281,
+    "excluded_from_training_for_quality": [
+      "f14_a"
+    ],
+    "held_out_participant": "f16"
+  },
+  "held_out_participant": "f16",
+  "timeline": [
+    {
+      "window": 4,
+      "elapsed_minutes": 4.0,
+      "ml_anomaly_score": 0.2912,
+      "raw_model_score": 0.479975,
+      "is_baseline": true
+    },
+    {
+      "window": 5,
+      "elapsed_minutes": 5.0,
+      "ml_anomaly_score": 0.0,
+      "raw_model_score": 0.387248,
+      "is_baseline": true
+    },
+    {
+      "window": 6,
+      "elapsed_minutes": 6.0,
+      "ml_anomaly_score": 0.3257,
+      "raw_model_score": 0.490957,
+      "is_baseline": true
+    },
+    {
+      "window": 7,
+      "elapsed_minutes": 7.0,
+      "ml_anomaly_score": 0.1089,
+      "raw_model_score": 0.421914,
+      "is_baseline": true
+    },
+    {
+      "window": 8,
+      "elapsed_minutes": 8.0,
+      "ml_anomaly_score": 0.0351,
+      "raw_model_score": 0.398423,
+      "is_baseline": true
+    },
+    {
+      "window": 9,
+      "elapsed_minutes": 9.0,
+      "ml_anomaly_score": 0.082,
+      "raw_model_score": 0.413365,
+      "is_baseline": true
+    },
+    {
+      "window": 10,
+      "elapsed_minutes": 10.0,
+      "ml_anomaly_score": 0.1747,
+      "raw_model_score": 0.442877,
+      "is_baseline": true
+    },
+    {
+      "window": 11,
+      "elapsed_minutes": 11.0,
+      "ml_anomaly_score": 0.4547,
+      "raw_model_score": 0.532036,
+      "is_baseline": false
+    },
+    {
+      "window": 12,
+      "elapsed_minutes": 12.0,
+      "ml_anomaly_score": 0.5573,
+      "raw_model_score": 0.564718,
+      "is_baseline": false
+    },
+    {
+      "window": 13,
+      "elapsed_minutes": 13.0,
+      "ml_anomaly_score": 0.5509,
+      "raw_model_score": 0.562697,
+      "is_baseline": false
+    },
+    {
+      "window": 14,
+      "elapsed_minutes": 14.0,
+      "ml_anomaly_score": 0.5573,
+      "raw_model_score": 0.564722,
+      "is_baseline": false
+    },
+    {
+      "window": 15,
+      "elapsed_minutes": 15.0,
+      "ml_anomaly_score": 0.683,
+      "raw_model_score": 0.604766,
+      "is_baseline": false
+    },
+    {
+      "window": 16,
+      "elapsed_minutes": 16.0,
+      "ml_anomaly_score": 0.7068,
+      "raw_model_score": 0.612341,
+      "is_baseline": false
+    },
+    {
+      "window": 17,
+      "elapsed_minutes": 17.0,
+      "ml_anomaly_score": 0.5882,
+      "raw_model_score": 0.574566,
+      "is_baseline": false
+    },
+    {
+      "window": 18,
+      "elapsed_minutes": 18.0,
+      "ml_anomaly_score": 0.535,
+      "raw_model_score": 0.557629,
+      "is_baseline": false
+    },
+    {
+      "window": 19,
+      "elapsed_minutes": 19.0,
+      "ml_anomaly_score": 0.5685,
+      "raw_model_score": 0.568304,
+      "is_baseline": false
+    },
+    {
+      "window": 20,
+      "elapsed_minutes": 20.0,
+      "ml_anomaly_score": 0.7984,
+      "raw_model_score": 0.641504,
+      "is_baseline": false
+    },
+    {
+      "window": 21,
+      "elapsed_minutes": 21.0,
+      "ml_anomaly_score": 0.7948,
+      "raw_model_score": 0.640346,
+      "is_baseline": false
+    },
+    {
+      "window": 22,
+      "elapsed_minutes": 22.0,
+      "ml_anomaly_score": 0.8044,
+      "raw_model_score": 0.643398,
+      "is_baseline": false
+    },
+    {
+      "window": 23,
+      "elapsed_minutes": 23.0,
+      "ml_anomaly_score": 0.8441,
+      "raw_model_score": 0.656051,
+      "is_baseline": false
+    },
+    {
+      "window": 24,
+      "elapsed_minutes": 24.0,
+      "ml_anomaly_score": 0.8239,
+      "raw_model_score": 0.649626,
+      "is_baseline": false
+    },
+    {
+      "window": 25,
+      "elapsed_minutes": 25.0,
+      "ml_anomaly_score": 0.8051,
+      "raw_model_score": 0.643626,
+      "is_baseline": false
+    },
+    {
+      "window": 26,
+      "elapsed_minutes": 26.0,
+      "ml_anomaly_score": 0.8232,
+      "raw_model_score": 0.649383,
+      "is_baseline": false
+    },
+    {
+      "window": 27,
+      "elapsed_minutes": 27.0,
+      "ml_anomaly_score": 0.7618,
+      "raw_model_score": 0.629858,
+      "is_baseline": false
+    },
+    {
+      "window": 28,
+      "elapsed_minutes": 28.0,
+      "ml_anomaly_score": 0.8406,
+      "raw_model_score": 0.654928,
+      "is_baseline": false
+    },
+    {
+      "window": 29,
+      "elapsed_minutes": 29.0,
+      "ml_anomaly_score": 1.0,
+      "raw_model_score": 0.705701,
+      "is_baseline": false
+    },
+    {
+      "window": 30,
+      "elapsed_minutes": 30.0,
+      "ml_anomaly_score": 0.9059,
+      "raw_model_score": 0.675748,
+      "is_baseline": false
+    },
+    {
+      "window": 31,
+      "elapsed_minutes": 31.0,
+      "ml_anomaly_score": 0.9222,
+      "raw_model_score": 0.68092,
+      "is_baseline": false
+    },
+    {
+      "window": 32,
+      "elapsed_minutes": 32.0,
+      "ml_anomaly_score": 0.7184,
+      "raw_model_score": 0.616021,
+      "is_baseline": false
+    },
+    {
+      "window": 33,
+      "elapsed_minutes": 33.0,
+      "ml_anomaly_score": 0.8481,
+      "raw_model_score": 0.65734,
+      "is_baseline": false
+    },
+    {
+      "window": 34,
+      "elapsed_minutes": 34.0,
+      "ml_anomaly_score": 0.9516,
+      "raw_model_score": 0.690295,
+      "is_baseline": false
+    },
+    {
+      "window": 35,
+      "elapsed_minutes": 35.0,
+      "ml_anomaly_score": 0.6092,
+      "raw_model_score": 0.581245,
+      "is_baseline": false
+    },
+    {
+      "window": 36,
+      "elapsed_minutes": 36.0,
+      "ml_anomaly_score": 0.6364,
+      "raw_model_score": 0.589917,
+      "is_baseline": false
+    },
+    {
+      "window": 37,
+      "elapsed_minutes": 37.0,
+      "ml_anomaly_score": 0.7348,
+      "raw_model_score": 0.621241,
+      "is_baseline": false
+    },
+    {
+      "window": 38,
+      "elapsed_minutes": 38.0,
+      "ml_anomaly_score": 0.7137,
+      "raw_model_score": 0.61452,
+      "is_baseline": false
+    },
+    {
+      "window": 39,
+      "elapsed_minutes": 39.0,
+      "ml_anomaly_score": 0.7081,
+      "raw_model_score": 0.612738,
+      "is_baseline": false
+    },
+    {
+      "window": 40,
+      "elapsed_minutes": 40.0,
+      "ml_anomaly_score": 0.7213,
+      "raw_model_score": 0.61695,
+      "is_baseline": false
+    },
+    {
+      "window": 41,
+      "elapsed_minutes": 41.0,
+      "ml_anomaly_score": 0.6743,
+      "raw_model_score": 0.60197,
+      "is_baseline": false
+    },
+    {
+      "window": 42,
+      "elapsed_minutes": 42.0,
+      "ml_anomaly_score": 0.6504,
+      "raw_model_score": 0.594364,
+      "is_baseline": false
+    },
+    {
+      "window": 43,
+      "elapsed_minutes": 43.0,
+      "ml_anomaly_score": 0.6315,
+      "raw_model_score": 0.588361,
+      "is_baseline": false
+    },
+    {
+      "window": 44,
+      "elapsed_minutes": 44.0,
+      "ml_anomaly_score": 0.7177,
+      "raw_model_score": 0.615788,
+      "is_baseline": false
+    },
+    {
+      "window": 45,
+      "elapsed_minutes": 45.0,
+      "ml_anomaly_score": 0.5788,
+      "raw_model_score": 0.571557,
+      "is_baseline": false
+    },
+    {
+      "window": 46,
+      "elapsed_minutes": 46.0,
+      "ml_anomaly_score": 0.3003,
+      "raw_model_score": 0.482887,
+      "is_baseline": false
+    },
+    {
+      "window": 47,
+      "elapsed_minutes": 47.0,
+      "ml_anomaly_score": 0.4761,
+      "raw_model_score": 0.538852,
+      "is_baseline": false
+    },
+    {
+      "window": 48,
+      "elapsed_minutes": 48.0,
+      "ml_anomaly_score": 0.0277,
+      "raw_model_score": 0.396076,
+      "is_baseline": false
+    },
+    {
+      "window": 49,
+      "elapsed_minutes": 49.0,
+      "ml_anomaly_score": 0.5458,
+      "raw_model_score": 0.561056,
+      "is_baseline": false
+    },
+    {
+      "window": 50,
+      "elapsed_minutes": 50.0,
+      "ml_anomaly_score": 0.5578,
+      "raw_model_score": 0.564888,
+      "is_baseline": false
+    },
+    {
+      "window": 51,
+      "elapsed_minutes": 51.0,
+      "ml_anomaly_score": 0.7474,
+      "raw_model_score": 0.62526,
+      "is_baseline": false
+    },
+    {
+      "window": 52,
+      "elapsed_minutes": 52.0,
+      "ml_anomaly_score": 0.5442,
+      "raw_model_score": 0.560538,
+      "is_baseline": false
+    },
+    {
+      "window": 53,
+      "elapsed_minutes": 53.0,
+      "ml_anomaly_score": 0.3634,
+      "raw_model_score": 0.502975,
+      "is_baseline": false
+    }
+  ],
+  "evaluation": {
+    "baseline_mean_anomaly": 0.1454,
+    "post_baseline_mean_anomaly": 0.6694,
+    "peak_anomaly_window": 29,
+    "peak_anomaly_score": 1.0,
+    "persistent_anomaly_detected": true,
+    "persistence_threshold_display": 0.3947
+  },
+  "disclaimer": "This unsupervised model identifies deviations from learned baseline-like physiological patterns. Its anomaly scores are not disease probabilities, stress probabilities, diagnoses, or clinical risk scores."
+}
