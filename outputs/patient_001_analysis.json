@@ -1,0 +1,2220 @@
+{
+  "patient": {
+    "patient_id": "001",
+    "display_name": "Synthetic Demo Patient",
+    "observed_days": 30
+  },
+  "data_source": {
+    "type": "synthetic_demo",
+    "label": "Synthetic longitudinal demonstration patient",
+    "is_real_patient_data": false
+  },
+  "timeline": [
+    {
+      "date": "2025-01-01",
+      "day": 1,
+      "sleep_hours": 7.6,
+      "hrv_ms": 60.8,
+      "resting_hr_bpm": 63.1,
+      "steps": 9032,
+      "temperature_f": 97.89,
+      "respiratory_rate": 14.6,
+      "eda": 2.03,
+      "fatigue_score": 1.92,
+      "stress_score": 1.99,
+      "baseline_deviation_score": 0.9948,
+      "baseline_status": "Within personal baseline",
+      "temporal_change_score": 0.1065,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-02",
+      "day": 2,
+      "sleep_hours": 7.42,
+      "hrv_ms": 63.1,
+      "resting_hr_bpm": 63.1,
+      "steps": 8770,
+      "temperature_f": 98.14,
+      "respiratory_rate": 15.1,
+      "eda": 1.83,
+      "fatigue_score": 2.09,
+      "stress_score": 1.71,
+      "baseline_deviation_score": 1.0606,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.104,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-03",
+      "day": 3,
+      "sleep_hours": 7.68,
+      "hrv_ms": 61.9,
+      "resting_hr_bpm": 62.4,
+      "steps": 8546,
+      "temperature_f": 98.15,
+      "respiratory_rate": 15.0,
+      "eda": 1.91,
+      "fatigue_score": 1.91,
+      "stress_score": 2.16,
+      "baseline_deviation_score": 0.7899,
+      "baseline_status": "Within personal baseline",
+      "temporal_change_score": 0.0028,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-04",
+      "day": 4,
+      "sleep_hours": 7.6,
+      "hrv_ms": 62.5,
+      "resting_hr_bpm": 62.8,
+      "steps": 9392,
+      "temperature_f": 98.02,
+      "respiratory_rate": 14.8,
+      "eda": 1.84,
+      "fatigue_score": 2.15,
+      "stress_score": 2.34,
+      "baseline_deviation_score": 1.0654,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.1576,
+      "signal_agreement": 0.1111
+    },
+    {
+      "date": "2025-01-05",
+      "day": 5,
+      "sleep_hours": 7.53,
+      "hrv_ms": 61.0,
+      "resting_hr_bpm": 61.8,
+      "steps": 8945,
+      "temperature_f": 98.11,
+      "respiratory_rate": 15.2,
+      "eda": 1.87,
+      "fatigue_score": 2.06,
+      "stress_score": 2.04,
+      "baseline_deviation_score": 0.8745,
+      "baseline_status": "Within personal baseline",
+      "temporal_change_score": 0.1016,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-06",
+      "day": 6,
+      "sleep_hours": 7.58,
+      "hrv_ms": 63.0,
+      "resting_hr_bpm": 62.7,
+      "steps": 8954,
+      "temperature_f": 98.06,
+      "respiratory_rate": 15.1,
+      "eda": 2.13,
+      "fatigue_score": 1.64,
+      "stress_score": 1.9,
+      "baseline_deviation_score": 0.809,
+      "baseline_status": "Within personal baseline",
+      "temporal_change_score": 0.0372,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-07",
+      "day": 7,
+      "sleep_hours": 7.48,
+      "hrv_ms": 61.2,
+      "resting_hr_bpm": 62.3,
+      "steps": 9198,
+      "temperature_f": 97.98,
+      "respiratory_rate": 15.3,
+      "eda": 1.66,
+      "fatigue_score": 1.92,
+      "stress_score": 2.05,
+      "baseline_deviation_score": 1.0054,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.1548,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-08",
+      "day": 8,
+      "sleep_hours": 7.64,
+      "hrv_ms": 62.9,
+      "resting_hr_bpm": 63.1,
+      "steps": 8645,
+      "temperature_f": 98.01,
+      "respiratory_rate": 15.3,
+      "eda": 1.96,
+      "fatigue_score": 1.68,
+      "stress_score": 1.66,
+      "baseline_deviation_score": 1.1022,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.1764,
+      "signal_agreement": 0.1111
+    },
+    {
+      "date": "2025-01-09",
+      "day": 9,
+      "sleep_hours": 7.41,
+      "hrv_ms": 62.6,
+      "resting_hr_bpm": 62.6,
+      "steps": 8957,
+      "temperature_f": 98.02,
+      "respiratory_rate": 15.0,
+      "eda": 2.13,
+      "fatigue_score": 1.92,
+      "stress_score": 2.14,
+      "baseline_deviation_score": 0.6846,
+      "baseline_status": "Within personal baseline",
+      "temporal_change_score": 0.0012,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-10",
+      "day": 10,
+      "sleep_hours": 7.45,
+      "hrv_ms": 61.6,
+      "resting_hr_bpm": 62.2,
+      "steps": 8391,
+      "temperature_f": 98.09,
+      "respiratory_rate": 14.9,
+      "eda": 2.0,
+      "fatigue_score": 2.12,
+      "stress_score": 2.13,
+      "baseline_deviation_score": 0.8362,
+      "baseline_status": "Within personal baseline",
+      "temporal_change_score": 0.0114,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-11",
+      "day": 11,
+      "sleep_hours": 7.65,
+      "hrv_ms": 61.9,
+      "resting_hr_bpm": 62.2,
+      "steps": 8726,
+      "temperature_f": 97.92,
+      "respiratory_rate": 14.6,
+      "eda": 1.74,
+      "fatigue_score": 1.75,
+      "stress_score": 2.12,
+      "baseline_deviation_score": 1.0168,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.1622,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-12",
+      "day": 12,
+      "sleep_hours": 7.41,
+      "hrv_ms": 61.5,
+      "resting_hr_bpm": 63.5,
+      "steps": 8643,
+      "temperature_f": 98.11,
+      "respiratory_rate": 14.7,
+      "eda": 1.96,
+      "fatigue_score": 1.76,
+      "stress_score": 1.9,
+      "baseline_deviation_score": 1.0056,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.1108,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-13",
+      "day": 13,
+      "sleep_hours": 7.68,
+      "hrv_ms": 59.9,
+      "resting_hr_bpm": 62.8,
+      "steps": 8821,
+      "temperature_f": 98.0,
+      "respiratory_rate": 14.6,
+      "eda": 2.01,
+      "fatigue_score": 1.87,
+      "stress_score": 2.07,
+      "baseline_deviation_score": 0.9465,
+      "baseline_status": "Within personal baseline",
+      "temporal_change_score": 0.0189,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-14",
+      "day": 14,
+      "sleep_hours": 7.55,
+      "hrv_ms": 63.9,
+      "resting_hr_bpm": 62.3,
+      "steps": 8443,
+      "temperature_f": 98.06,
+      "respiratory_rate": 15.1,
+      "eda": 2.27,
+      "fatigue_score": 2.21,
+      "stress_score": 2.11,
+      "baseline_deviation_score": 1.1718,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.2541,
+      "signal_agreement": 0.0
+    },
+    {
+      "date": "2025-01-15",
+      "day": 15,
+      "sleep_hours": 7.77,
+      "hrv_ms": 60.6,
+      "resting_hr_bpm": 62.0,
+      "steps": 8472,
+      "temperature_f": 98.02,
+      "respiratory_rate": 14.6,
+      "eda": 2.13,
+      "fatigue_score": 1.94,
+      "stress_score": 1.56,
+      "baseline_deviation_score": 1.478,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.2455,
+      "signal_agreement": 0.2222
+    },
+    {
+      "date": "2025-01-16",
+      "day": 16,
+      "sleep_hours": 7.4,
+      "hrv_ms": 62.4,
+      "resting_hr_bpm": 63.2,
+      "steps": 9349,
+      "temperature_f": 98.28,
+      "respiratory_rate": 15.1,
+      "eda": 1.8,
+      "fatigue_score": 1.47,
+      "stress_score": 2.08,
+      "baseline_deviation_score": 1.657,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.2818,
+      "signal_agreement": 0.2222
+    },
+    {
+      "date": "2025-01-17",
+      "day": 17,
+      "sleep_hours": 7.43,
+      "hrv_ms": 61.5,
+      "resting_hr_bpm": 62.0,
+      "steps": 8708,
+      "temperature_f": 98.14,
+      "respiratory_rate": 15.0,
+      "eda": 1.97,
+      "fatigue_score": 1.74,
+      "stress_score": 1.5,
+      "baseline_deviation_score": 1.2819,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.2172,
+      "signal_agreement": 0.1111
+    },
+    {
+      "date": "2025-01-18",
+      "day": 18,
+      "sleep_hours": 7.3,
+      "hrv_ms": 61.9,
+      "resting_hr_bpm": 63.9,
+      "steps": 8789,
+      "temperature_f": 98.13,
+      "respiratory_rate": 14.9,
+      "eda": 1.76,
+      "fatigue_score": 2.04,
+      "stress_score": 1.78,
+      "baseline_deviation_score": 1.4374,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.2155,
+      "signal_agreement": 0.2222
+    },
+    {
+      "date": "2025-01-19",
+      "day": 19,
+      "sleep_hours": 7.51,
+      "hrv_ms": 61.0,
+      "resting_hr_bpm": 63.2,
+      "steps": 8479,
+      "temperature_f": 98.12,
+      "respiratory_rate": 15.1,
+      "eda": 1.97,
+      "fatigue_score": 2.55,
+      "stress_score": 1.8,
+      "baseline_deviation_score": 1.4472,
+      "baseline_status": "Mild deviation",
+      "temporal_change_score": 0.1184,
+      "signal_agreement": 0.1111
+    },
+    {
+      "date": "2025-01-20",
+      "day": 20,
+      "sleep_hours": 7.08,
+      "hrv_ms": 59.9,
+      "resting_hr_bpm": 61.5,
+      "steps": 8367,
+      "temperature_f": 98.06,
+      "respiratory_rate": 15.6,
+      "eda": 2.03,
+      "fatigue_score": 2.81,
+      "stress_score": 2.09,
+      "baseline_deviation_score": 2.6984,
+      "baseline_status": "Moderate deviation",
+      "temporal_change_score": 0.3846,
+      "signal_agreement": 0.4444
+    },
+    {
+      "date": "2025-01-21",
+      "day": 21,
+      "sleep_hours": 7.03,
+      "hrv_ms": 59.1,
+      "resting_hr_bpm": 62.2,
+      "steps": 9082,
+      "temperature_f": 98.08,
+      "respiratory_rate": 15.6,
+      "eda": 2.39,
+      "fatigue_score": 2.81,
+      "stress_score": 2.04,
+      "baseline_deviation_score": 2.8721,
+      "baseline_status": "Moderate deviation",
+      "temporal_change_score": 0.4087,
+      "signal_agreement": 0.5556
+    },
+    {
+      "date": "2025-01-22",
+      "day": 22,
+      "sleep_hours": 6.9,
+      "hrv_ms": 59.3,
+      "resting_hr_bpm": 62.4,
+      "steps": 8635,
+      "temperature_f": 98.17,
+      "respiratory_rate": 14.9,
+      "eda": 2.52,
+      "fatigue_score": 3.56,
+      "stress_score": 2.78,
+      "baseline_deviation_score": 4.2765,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.4631,
+      "signal_agreement": 0.5556
+    },
+    {
+      "date": "2025-01-23",
+      "day": 23,
+      "sleep_hours": 6.47,
+      "hrv_ms": 55.4,
+      "resting_hr_bpm": 63.7,
+      "steps": 9172,
+      "temperature_f": 98.06,
+      "respiratory_rate": 15.5,
+      "eda": 2.64,
+      "fatigue_score": 3.67,
+      "stress_score": 3.1,
+      "baseline_deviation_score": 5.903,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.6156,
+      "signal_agreement": 0.7778
+    },
+    {
+      "date": "2025-01-24",
+      "day": 24,
+      "sleep_hours": 6.11,
+      "hrv_ms": 52.9,
+      "resting_hr_bpm": 64.0,
+      "steps": 9025,
+      "temperature_f": 97.94,
+      "respiratory_rate": 15.4,
+      "eda": 3.3,
+      "fatigue_score": 3.88,
+      "stress_score": 4.1,
+      "baseline_deviation_score": 8.2476,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.6853,
+      "signal_agreement": 0.6667
+    },
+    {
+      "date": "2025-01-25",
+      "day": 25,
+      "sleep_hours": 6.19,
+      "hrv_ms": 54.0,
+      "resting_hr_bpm": 65.1,
+      "steps": 7991,
+      "temperature_f": 98.03,
+      "respiratory_rate": 15.6,
+      "eda": 3.79,
+      "fatigue_score": 3.97,
+      "stress_score": 4.28,
+      "baseline_deviation_score": 8.8009,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.7284,
+      "signal_agreement": 0.8889
+    },
+    {
+      "date": "2025-01-26",
+      "day": 26,
+      "sleep_hours": 5.96,
+      "hrv_ms": 53.8,
+      "resting_hr_bpm": 67.6,
+      "steps": 7394,
+      "temperature_f": 98.03,
+      "respiratory_rate": 15.1,
+      "eda": 3.98,
+      "fatigue_score": 4.6,
+      "stress_score": 5.06,
+      "baseline_deviation_score": 11.1102,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.7335,
+      "signal_agreement": 0.7778
+    },
+    {
+      "date": "2025-01-27",
+      "day": 27,
+      "sleep_hours": 5.64,
+      "hrv_ms": 48.4,
+      "resting_hr_bpm": 65.3,
+      "steps": 7051,
+      "temperature_f": 98.09,
+      "respiratory_rate": 15.5,
+      "eda": 4.27,
+      "fatigue_score": 4.78,
+      "stress_score": 4.62,
+      "baseline_deviation_score": 11.8544,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.79,
+      "signal_agreement": 0.8889
+    },
+    {
+      "date": "2025-01-28",
+      "day": 28,
+      "sleep_hours": 5.35,
+      "hrv_ms": 50.2,
+      "resting_hr_bpm": 66.9,
+      "steps": 6221,
+      "temperature_f": 98.44,
+      "respiratory_rate": 16.6,
+      "eda": 4.57,
+      "fatigue_score": 4.99,
+      "stress_score": 5.7,
+      "baseline_deviation_score": 14.1707,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.8896,
+      "signal_agreement": 1.0
+    },
+    {
+      "date": "2025-01-29",
+      "day": 29,
+      "sleep_hours": 5.65,
+      "hrv_ms": 44.8,
+      "resting_hr_bpm": 68.6,
+      "steps": 6233,
+      "temperature_f": 98.44,
+      "respiratory_rate": 15.7,
+      "eda": 5.12,
+      "fatigue_score": 5.02,
+      "stress_score": 5.98,
+      "baseline_deviation_score": 15.1127,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.9148,
+      "signal_agreement": 1.0
+    },
+    {
+      "date": "2025-01-30",
+      "day": 30,
+      "sleep_hours": 5.17,
+      "hrv_ms": 44.7,
+      "resting_hr_bpm": 69.3,
+      "steps": 5591,
+      "temperature_f": 98.61,
+      "respiratory_rate": 15.9,
+      "eda": 5.57,
+      "fatigue_score": 5.65,
+      "stress_score": 6.5,
+      "baseline_deviation_score": 17.5386,
+      "baseline_status": "Strong deviation",
+      "temporal_change_score": 0.9796,
+      "signal_agreement": 1.0
+    }
+  ],
+  "baseline": {
+    "baseline_period": "Days 1-14",
+    "baseline_statistics": {
+      "sleep_hours": {
+        "mean": 7.5486,
+        "std": 0.0997
+      },
+      "hrv_ms": {
+        "mean": 61.9857,
+        "std": 1.0798
+      },
+      "resting_hr_bpm": {
+        "mean": 62.6357,
+        "std": 0.4651
+      },
+      "steps": {
+        "mean": 8818.7857,
+        "std": 283.098
+      },
+      "temperature_f": {
+        "mean": 98.04,
+        "std": 0.078
+      },
+      "respiratory_rate": {
+        "mean": 14.95,
+        "std": 0.2534
+      },
+      "eda": {
+        "mean": 1.9529,
+        "std": 0.1623
+      },
+      "fatigue_score": {
+        "mean": 1.9286,
+        "std": 0.1792
+      },
+      "stress_score": {
+        "mean": 2.0229,
+        "std": 0.181
+      }
+    },
+    "latest_deviation_score": 17.5386,
+    "latest_status": "Strong deviation",
+    "latest_top_contributors": [
+      "stress_score",
+      "sleep_hours",
+      "eda"
+    ]
+  },
+  "change_detection": {
+    "detected_change_day": 20,
+    "detected_change_date": "2025-01-20",
+    "confidence": 0.5898,
+    "temporal_change_score_at_detection": 0.3846,
+    "signal_onsets": {
+      "sleep_hours": 20,
+      "hrv_ms": 21,
+      "resting_hr_bpm": 23,
+      "steps": 25,
+      "temperature_f": 28,
+      "respiratory_rate": 20,
+      "eda": 21,
+      "fatigue_score": 19,
+      "stress_score": 22
+    },
+    "signals_active_at_change_point": [
+      "sleep_hours",
+      "resting_hr_bpm",
+      "respiratory_rate",
+      "fatigue_score"
+    ],
+    "explanation": "TRACE detected the earliest sustained departure from the patient's personal baseline around Day 20 (2025-01-20). At detection the temporal change score was 0.385, above the baseline-derived elevated threshold of 0.254. The change was supported by coordinated movement across 4 physiological signal(s): sleep_hours, resting_hr_bpm, respiratory_rate, fatigue_score. This reflects a sustained multivariate shift, not a single noisy day. This is temporal pattern detection only and is not a diagnosis."
+  },
+  "relationships": {
+    "ordered_signal_onsets": [
+      {
+        "signal": "fatigue_score",
+        "onset_day": 19
+      },
+      {
+        "signal": "respiratory_rate",
+        "onset_day": 20
+      },
+      {
+        "signal": "sleep_hours",
+        "onset_day": 20
+      },
+      {
+        "signal": "eda",
+        "onset_day": 21
+      },
+      {
+        "signal": "hrv_ms",
+        "onset_day": 21
+      },
+      {
+        "signal": "stress_score",
+        "onset_day": 22
+      },
+      {
+        "signal": "resting_hr_bpm",
+        "onset_day": 23
+      },
+      {
+        "signal": "steps",
+        "onset_day": 25
+      },
+      {
+        "signal": "temperature_f",
+        "onset_day": 28
+      }
+    ],
+    "strong_correlations": [
+      {
+        "signal_a": "eda",
+        "signal_b": "stress_score",
+        "correlation": 0.9802,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "fatigue_score",
+        "signal_b": "stress_score",
+        "correlation": 0.9763,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "resting_hr_bpm",
+        "signal_b": "stress_score",
+        "correlation": 0.9718,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "sleep_hours",
+        "signal_b": "fatigue_score",
+        "correlation": -0.9705,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "eda",
+        "signal_b": "fatigue_score",
+        "correlation": 0.9679,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "sleep_hours",
+        "signal_b": "stress_score",
+        "correlation": -0.967,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "resting_hr_bpm",
+        "signal_b": "eda",
+        "correlation": 0.9603,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "hrv_ms",
+        "signal_b": "eda",
+        "correlation": -0.9575,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "sleep_hours",
+        "signal_b": "eda",
+        "correlation": -0.9551,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "resting_hr_bpm",
+        "signal_b": "fatigue_score",
+        "correlation": 0.9452,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "sleep_hours",
+        "signal_b": "hrv_ms",
+        "correlation": 0.9345,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "hrv_ms",
+        "signal_b": "fatigue_score",
+        "correlation": -0.9289,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "hrv_ms",
+        "signal_b": "stress_score",
+        "correlation": -0.9284,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "steps",
+        "signal_b": "eda",
+        "correlation": -0.9161,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "sleep_hours",
+        "signal_b": "resting_hr_bpm",
+        "correlation": -0.91,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "hrv_ms",
+        "signal_b": "resting_hr_bpm",
+        "correlation": -0.8957,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "steps",
+        "signal_b": "fatigue_score",
+        "correlation": -0.8932,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "steps",
+        "signal_b": "stress_score",
+        "correlation": -0.887,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "resting_hr_bpm",
+        "signal_b": "steps",
+        "correlation": -0.8742,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "sleep_hours",
+        "signal_b": "steps",
+        "correlation": 0.8554,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "hrv_ms",
+        "signal_b": "steps",
+        "correlation": 0.8423,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "steps",
+        "signal_b": "temperature_f",
+        "correlation": -0.8376,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "temperature_f",
+        "signal_b": "eda",
+        "correlation": 0.7287,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "temperature_f",
+        "signal_b": "fatigue_score",
+        "correlation": 0.705,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "resting_hr_bpm",
+        "signal_b": "temperature_f",
+        "correlation": 0.687,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "temperature_f",
+        "signal_b": "stress_score",
+        "correlation": 0.6861,
+        "direction": "move together"
+      },
+      {
+        "signal_a": "hrv_ms",
+        "signal_b": "temperature_f",
+        "correlation": -0.6817,
+        "direction": "move oppositely"
+      },
+      {
+        "signal_a": "sleep_hours",
+        "signal_b": "temperature_f",
+        "correlation": -0.6411,
+        "direction": "move oppositely"
+      }
+    ],
+    "lagged_relationships": [
+      {
+        "leading_signal": "fatigue_score",
+        "following_signal": "stress_score",
+        "lag_days": 2,
+        "correlation": 0.9891
+      },
+      {
+        "leading_signal": "stress_score",
+        "following_signal": "fatigue_score",
+        "lag_days": 2,
+        "correlation": 0.9876
+      },
+      {
+        "leading_signal": "eda",
+        "following_signal": "fatigue_score",
+        "lag_days": 2,
+        "correlation": 0.986
+      },
+      {
+        "leading_signal": "fatigue_score",
+        "following_signal": "eda",
+        "lag_days": 2,
+        "correlation": 0.9856
+      },
+      {
+        "leading_signal": "sleep_hours",
+        "following_signal": "fatigue_score",
+        "lag_days": 3,
+        "correlation": -0.9852
+      },
+      {
+        "leading_signal": "sleep_hours",
+        "following_signal": "eda",
+        "lag_days": 2,
+        "correlation": -0.9846
+      },
+      {
+        "leading_signal": "stress_score",
+        "following_signal": "eda",
+        "lag_days": 1,
+        "correlation": 0.9814
+      },
+      {
+        "leading_signal": "eda",
+        "following_signal": "steps",
+        "lag_days": 1,
+        "correlation": -0.9775
+      },
+      {
+        "leading_signal": "hrv_ms",
+        "following_signal": "fatigue_score",
+        "lag_days": 3,
+        "correlation": -0.9767
+      },
+      {
+        "leading_signal": "sleep_hours",
+        "following_signal": "stress_score",
+        "lag_days": 2,
+        "correlation": -0.9715
+      },
+      {
+        "leading_signal": "stress_score",
+        "following_signal": "steps",
+        "lag_days": 2,
+        "correlation": -0.9697
+      },
+      {
+        "leading_signal": "sleep_hours",
+        "following_signal": "steps",
+        "lag_days": 2,
+        "correlation": 0.9696
+      },
+      {
+        "leading_signal": "sleep_hours",
+        "following_signal": "resting_hr_bpm",
+        "lag_days": 2,
+        "correlation": -0.9667
+      },
+      {
+        "leading_signal": "fatigue_score",
+        "following_signal": "hrv_ms",
+        "lag_days": 1,
+        "correlation": -0.9661
+      },
+      {
+        "leading_signal": "fatigue_score",
+        "following_signal": "steps",
+        "lag_days": 3,
+        "correlation": -0.9654
+      },
+      {
+        "leading_signal": "hrv_ms",
+        "following_signal": "eda",
+        "lag_days": 1,
+        "correlation": -0.9607
+      },
+      {
+        "leading_signal": "stress_score",
+        "following_signal": "hrv_ms",
+        "lag_days": 1,
+        "correlation": -0.956
+      },
+      {
+        "leading_signal": "hrv_ms",
+        "following_signal": "stress_score",
+        "lag_days": 1,
+        "correlation": -0.9525
+      },
+      {
+        "leading_signal": "hrv_ms",
+        "following_signal": "resting_hr_bpm",
+        "lag_days": 2,
+        "correlation": -0.9516
+      },
+      {
+        "leading_signal": "resting_hr_bpm",
+        "following_signal": "sleep_hours",
+        "lag_days": 2,
+        "correlation": -0.9458
+      },
+      {
+        "leading_signal": "resting_hr_bpm",
+        "following_signal": "hrv_ms",
+        "lag_days": 1,
+        "correlation": -0.9414
+      },
+      {
+        "leading_signal": "resting_hr_bpm",
+        "following_signal": "steps",
+        "lag_days": 2,
+        "correlation": -0.934
+      },
+      {
+        "leading_signal": "steps",
+        "following_signal": "temperature_f",
+        "lag_days": 2,
+        "correlation": -0.9331
+      },
+      {
+        "leading_signal": "hrv_ms",
+        "following_signal": "steps",
+        "lag_days": 1,
+        "correlation": 0.9297
+      },
+      {
+        "leading_signal": "eda",
+        "following_signal": "temperature_f",
+        "lag_days": 3,
+        "correlation": 0.9201
+      },
+      {
+        "leading_signal": "fatigue_score",
+        "following_signal": "temperature_f",
+        "lag_days": 3,
+        "correlation": 0.8561
+      },
+      {
+        "leading_signal": "steps",
+        "following_signal": "hrv_ms",
+        "lag_days": 1,
+        "correlation": 0.8558
+      },
+      {
+        "leading_signal": "stress_score",
+        "following_signal": "temperature_f",
+        "lag_days": 3,
+        "correlation": 0.844
+      },
+      {
+        "leading_signal": "sleep_hours",
+        "following_signal": "temperature_f",
+        "lag_days": 3,
+        "correlation": -0.8426
+      },
+      {
+        "leading_signal": "resting_hr_bpm",
+        "following_signal": "respiratory_rate",
+        "lag_days": 2,
+        "correlation": 0.8278
+      },
+      {
+        "leading_signal": "hrv_ms",
+        "following_signal": "temperature_f",
+        "lag_days": 3,
+        "correlation": -0.8042
+      },
+      {
+        "leading_signal": "resting_hr_bpm",
+        "following_signal": "temperature_f",
+        "lag_days": 3,
+        "correlation": 0.7985
+      },
+      {
+        "leading_signal": "fatigue_score",
+        "following_signal": "respiratory_rate",
+        "lag_days": 2,
+        "correlation": 0.6681
+      },
+      {
+        "leading_signal": "stress_score",
+        "following_signal": "respiratory_rate",
+        "lag_days": 2,
+        "correlation": 0.6434
+      },
+      {
+        "leading_signal": "hrv_ms",
+        "following_signal": "respiratory_rate",
+        "lag_days": 1,
+        "correlation": -0.6406
+      },
+      {
+        "leading_signal": "eda",
+        "following_signal": "respiratory_rate",
+        "lag_days": 2,
+        "correlation": 0.6269
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "name": "sleep_hours",
+          "onset_day": 20,
+          "change_direction": "decreased"
+        },
+        {
+          "name": "hrv_ms",
+          "onset_day": 21,
+          "change_direction": "decreased"
+        },
+        {
+          "name": "resting_hr_bpm",
+          "onset_day": 23,
+          "change_direction": "increased"
+        },
+        {
+          "name": "steps",
+          "onset_day": 25,
+          "change_direction": "decreased"
+        },
+        {
+          "name": "temperature_f",
+          "onset_day": 28,
+          "change_direction": "increased"
+        },
+        {
+          "name": "respiratory_rate",
+          "onset_day": 20,
+          "change_direction": "increased"
+        },
+        {
+          "name": "eda",
+          "onset_day": 21,
+          "change_direction": "increased"
+        },
+        {
+          "name": "fatigue_score",
+          "onset_day": 19,
+          "change_direction": "increased"
+        },
+        {
+          "name": "stress_score",
+          "onset_day": 22,
+          "change_direction": "increased"
+        }
+      ],
+      "edges": [
+        {
+          "source": "eda",
+          "target": "stress_score",
+          "correlation": 0.9802,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "fatigue_score",
+          "target": "stress_score",
+          "correlation": 0.9763,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "stress_score",
+          "correlation": 0.9718,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "fatigue_score",
+          "correlation": -0.9705,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "eda",
+          "target": "fatigue_score",
+          "correlation": 0.9679,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "stress_score",
+          "correlation": -0.967,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "eda",
+          "correlation": 0.9603,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "eda",
+          "correlation": -0.9575,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "eda",
+          "correlation": -0.9551,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "fatigue_score",
+          "correlation": 0.9452,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "hrv_ms",
+          "correlation": 0.9345,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "fatigue_score",
+          "correlation": -0.9289,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "stress_score",
+          "correlation": -0.9284,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "steps",
+          "target": "eda",
+          "correlation": -0.9161,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "resting_hr_bpm",
+          "correlation": -0.91,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "resting_hr_bpm",
+          "correlation": -0.8957,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "steps",
+          "target": "fatigue_score",
+          "correlation": -0.8932,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "steps",
+          "target": "stress_score",
+          "correlation": -0.887,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "steps",
+          "correlation": -0.8742,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "steps",
+          "correlation": 0.8554,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "steps",
+          "correlation": 0.8423,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "steps",
+          "target": "temperature_f",
+          "correlation": -0.8376,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "temperature_f",
+          "target": "eda",
+          "correlation": 0.7287,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "temperature_f",
+          "target": "fatigue_score",
+          "correlation": 0.705,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "temperature_f",
+          "correlation": 0.687,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "temperature_f",
+          "target": "stress_score",
+          "correlation": 0.6861,
+          "lag_days": 0,
+          "relationship": "moves with"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "temperature_f",
+          "correlation": -0.6817,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "temperature_f",
+          "correlation": -0.6411,
+          "lag_days": 0,
+          "relationship": "moves inversely with"
+        },
+        {
+          "source": "fatigue_score",
+          "target": "stress_score",
+          "correlation": 0.9891,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "stress_score",
+          "target": "fatigue_score",
+          "correlation": 0.9876,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "eda",
+          "target": "fatigue_score",
+          "correlation": 0.986,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "fatigue_score",
+          "target": "eda",
+          "correlation": 0.9856,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "fatigue_score",
+          "correlation": -0.9852,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "eda",
+          "correlation": -0.9846,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "stress_score",
+          "target": "eda",
+          "correlation": 0.9814,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "eda",
+          "target": "steps",
+          "correlation": -0.9775,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "fatigue_score",
+          "correlation": -0.9767,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "stress_score",
+          "correlation": -0.9715,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "stress_score",
+          "target": "steps",
+          "correlation": -0.9697,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "steps",
+          "correlation": 0.9696,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "resting_hr_bpm",
+          "correlation": -0.9667,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "fatigue_score",
+          "target": "hrv_ms",
+          "correlation": -0.9661,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "fatigue_score",
+          "target": "steps",
+          "correlation": -0.9654,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "eda",
+          "correlation": -0.9607,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "stress_score",
+          "target": "hrv_ms",
+          "correlation": -0.956,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "stress_score",
+          "correlation": -0.9525,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "resting_hr_bpm",
+          "correlation": -0.9516,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "sleep_hours",
+          "correlation": -0.9458,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "hrv_ms",
+          "correlation": -0.9414,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "steps",
+          "correlation": -0.934,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "steps",
+          "target": "temperature_f",
+          "correlation": -0.9331,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "steps",
+          "correlation": 0.9297,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "eda",
+          "target": "temperature_f",
+          "correlation": 0.9201,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "fatigue_score",
+          "target": "temperature_f",
+          "correlation": 0.8561,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "steps",
+          "target": "hrv_ms",
+          "correlation": 0.8558,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "stress_score",
+          "target": "temperature_f",
+          "correlation": 0.844,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "sleep_hours",
+          "target": "temperature_f",
+          "correlation": -0.8426,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "respiratory_rate",
+          "correlation": 0.8278,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "temperature_f",
+          "correlation": -0.8042,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "resting_hr_bpm",
+          "target": "temperature_f",
+          "correlation": 0.7985,
+          "lag_days": 3,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "fatigue_score",
+          "target": "respiratory_rate",
+          "correlation": 0.6681,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "stress_score",
+          "target": "respiratory_rate",
+          "correlation": 0.6434,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "hrv_ms",
+          "target": "respiratory_rate",
+          "correlation": -0.6406,
+          "lag_days": 1,
+          "relationship": "earlier change associated with later change"
+        },
+        {
+          "source": "eda",
+          "target": "respiratory_rate",
+          "correlation": 0.6269,
+          "lag_days": 2,
+          "relationship": "earlier change associated with later change"
+        }
+      ]
+    },
+    "hypothesis_groups": [
+      {
+        "name": "Physiological stress pattern",
+        "supporting_signals": [
+          "eda",
+          "stress_score",
+          "fatigue_score"
+        ],
+        "support_score": 0.9874,
+        "reasoning": "3 of 3 signals in this group showed a detected onset; mean within-group association strength over the change period was 0.97. This is a non-diagnostic hypothesis category."
+      },
+      {
+        "name": "Activity / behavioral pattern",
+        "supporting_signals": [
+          "steps",
+          "sleep_hours"
+        ],
+        "support_score": 0.9277,
+        "reasoning": "2 of 2 signals in this group showed a detected onset; mean within-group association strength over the change period was 0.86. This is a non-diagnostic hypothesis category."
+      },
+      {
+        "name": "Recovery / autonomic pattern",
+        "supporting_signals": [
+          "hrv_ms",
+          "resting_hr_bpm",
+          "respiratory_rate"
+        ],
+        "support_score": 0.7874,
+        "reasoning": "3 of 3 signals in this group showed a detected onset; mean within-group association strength over the change period was 0.57. This is a non-diagnostic hypothesis category."
+      },
+      {
+        "name": "Possible measurement/context effect",
+        "supporting_signals": [
+          "temperature_f"
+        ],
+        "support_score": 0.6761,
+        "reasoning": "1 of 1 signals in this group showed a detected onset; mean within-group association strength over the change period was 0.35. This is a non-diagnostic hypothesis category."
+      }
+    ],
+    "disclaimer": "Observed relationships are statistical associations and temporal patterns, not evidence of medical causation or diagnosis."
+  },
+  "missing_information": {
+    "current_uncertainty": 1.9849,
+    "candidate_information": [
+      {
+        "variable": "subjective_stress_level",
+        "rank": 1,
+        "information_gain": 0.0724,
+        "expected_uncertainty": 1.9125,
+        "uncertainty_reduction_percent": 3.65,
+        "related_hypotheses": [
+          "Activity / behavioral pattern",
+          "Physiological stress pattern",
+          "Recovery / autonomic pattern"
+        ],
+        "reasoning": "Stress-related signals (eda, stress_score, fatigue_score) were active around the change point. A subjective stress rating would help confirm or down-weight the stress interpretation path.",
+        "example_question": "How would you rate your stress level around Day 20 \u2014 low, moderate, or high?"
+      },
+      {
+        "variable": "sleep_schedule_change",
+        "rank": 2,
+        "information_gain": 0.0553,
+        "expected_uncertainty": 1.9295,
+        "uncertainty_reduction_percent": 2.79,
+        "related_hypotheses": [
+          "Activity / behavioral pattern",
+          "Physiological stress pattern",
+          "Recovery / autonomic pattern"
+        ],
+        "reasoning": "Sleep was among the earliest signals to move away from the personal baseline (onset Day 20). Knowing whether the patient's schedule changed around the detected change point (Day 20) could help distinguish behavioral/contextual explanations from broader physiological patterns.",
+        "example_question": "Did your usual sleep schedule change around the time TRACE detected the first sustained shift (Day 20)?"
+      },
+      {
+        "variable": "ferritin_or_iron_status",
+        "rank": 3,
+        "information_gain": 0.0192,
+        "expected_uncertainty": 1.9656,
+        "uncertainty_reduction_percent": 0.97,
+        "related_hypotheses": [
+          "Activity / behavioral pattern",
+          "Physiological stress pattern",
+          "Recovery / autonomic pattern"
+        ],
+        "reasoning": "Reduced HRV and activity after Day 20 are consistent with several explanations. Iron/ferritin context would help separate recovery/autonomic from activity explanations.",
+        "example_question": "Do you have any recent information about your iron or ferritin status?"
+      },
+      {
+        "variable": "recent_illness",
+        "rank": 4,
+        "information_gain": 0.0163,
+        "expected_uncertainty": 1.9686,
+        "uncertainty_reduction_percent": 0.82,
+        "related_hypotheses": [
+          "Activity / behavioral pattern",
+          "Physiological stress pattern",
+          "Possible measurement/context effect",
+          "Recovery / autonomic pattern"
+        ],
+        "reasoning": "Several autonomic signals (resting_hr_bpm, respiratory_rate, temperature_f) shifted after Day 20. A recent illness flag would help weigh recovery/context explanations.",
+        "example_question": "Were you unwell (e.g. a cold or infection) around the time TRACE detected the first sustained shift (Day 20)?"
+      },
+      {
+        "variable": "recent_intense_exercise",
+        "rank": 5,
+        "information_gain": 0.0153,
+        "expected_uncertainty": 1.9696,
+        "uncertainty_reduction_percent": 0.77,
+        "related_hypotheses": [
+          "Activity / behavioral pattern",
+          "Physiological stress pattern",
+          "Possible measurement/context effect",
+          "Recovery / autonomic pattern"
+        ],
+        "reasoning": "Activity signals shifted after the change point (steps onset Day 25). Recent intense exercise could help separate activity/behavioral explanations from recovery ones.",
+        "example_question": "Did you have any unusually intense exercise or training around Day 20?"
+      },
+      {
+        "variable": "medication_change",
+        "rank": 6,
+        "information_gain": 0.0023,
+        "expected_uncertainty": 1.9826,
+        "uncertainty_reduction_percent": 0.12,
+        "related_hypotheses": [
+          "Activity / behavioral pattern",
+          "Physiological stress pattern",
+          "Possible measurement/context effect",
+          "Recovery / autonomic pattern"
+        ],
+        "reasoning": "A medication change around Day 20 could shift autonomic readings, so it helps weigh recovery and measurement/context explanations.",
+        "example_question": "Did any medication or supplement change around Day 20?"
+      }
+    ],
+    "most_valuable_missing_information": {
+      "variable": "subjective_stress_level",
+      "information_gain": 0.0724,
+      "expected_uncertainty": 1.9125,
+      "uncertainty_reduction_percent": 3.65,
+      "reasoning": "Stress-related signals (eda, stress_score, fatigue_score) were active around the change point. A subjective stress rating would help confirm or down-weight the stress interpretation path.",
+      "example_question": "How would you rate your stress level around Day 20 \u2014 low, moderate, or high?"
+    },
+    "disclaimer": "Information-value estimates are exploratory reasoning aids based on prototype assumptions. They do not represent medical advice, diagnostic testing recommendations, or clinical necessity."
+  },
+  "self_check": {
+    "component_scores": {
+      "deviation_strength": 1.0,
+      "signal_agreement": 0.7778,
+      "temporal_persistence": 1.0,
+      "data_completeness": 1.0,
+      "relationship_consistency": 0.9372,
+      "robustness": 1.0
+    },
+    "interpretation_uncertainty_penalty": 0.2977,
+    "interpretation_confidence": 66.76,
+    "confidence_band": "Moderate",
+    "sensitivity_analysis": {
+      "original_change_day": 20,
+      "alternative_change_days": {
+        "original_threshold": 20,
+        "threshold_minus_10pct": 20,
+        "threshold_plus_10pct": 20,
+        "stricter_persistence": 20
+      },
+      "max_change_day_shift": 0
+    },
+    "evidence_supporting_interpretation": [
+      "Deviation is sustained: 100% of post-change days stayed elevated above the baseline-derived threshold.",
+      "Multiple signals agree: average signal agreement after the change point was 0.78.",
+      "Post-change temporal scores separate clearly from the baseline period.",
+      "Change point is robust: it moved at most 0 day under +/-10% threshold and stricter-persistence tests.",
+      "Sensor data is complete (no missing physiological values).",
+      "Signal relationships are consistent (score 0.94)."
+    ],
+    "evidence_limiting_interpretation": [
+      "Competing hypothesis groups remain similar in support (normalized interpretation uncertainty 0.99).",
+      "Contextual information is missing; the most valuable would be 'subjective_stress_level'."
+    ],
+    "what_would_increase_confidence": [
+      "Collect 'subjective_stress_level' to reduce interpretation ambiguity between hypothesis groups.",
+      "Evidence that more clearly separates one hypothesis group from the others would lower interpretation uncertainty.",
+      "A longer observation window would further test whether the pattern persists."
+    ],
+    "disclaimer": "TRACE confidence reflects the consistency and robustness of the available data and analytical interpretation. It is not diagnostic confidence, clinical certainty, or probability of disease."
+  },
+  "counterfactual": {
+    "original_deviation_score": 17.5373,
+    "single_signal_counterfactuals": [
+      {
+        "feature": "stress_score",
+        "original_value": 6.5,
+        "baseline_value": 2.0229,
+        "counterfactual_value": 2.0229,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 15.4782,
+        "absolute_reduction": 2.0591,
+        "percentage_reduction": 11.74,
+        "rank": 1,
+        "interpretation": "If stress_score had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 11.74% (from 17.5373 to 15.4782). This describes mathematical sensitivity of the score, not a health outcome."
+      },
+      {
+        "feature": "sleep_hours",
+        "original_value": 5.17,
+        "baseline_value": 7.5486,
+        "counterfactual_value": 7.5486,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 15.6305,
+        "absolute_reduction": 1.9067,
+        "percentage_reduction": 10.87,
+        "rank": 2,
+        "interpretation": "If sleep_hours had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 10.87% (from 17.5373 to 15.6305). This describes mathematical sensitivity of the score, not a health outcome."
+      },
+      {
+        "feature": "eda",
+        "original_value": 5.57,
+        "baseline_value": 1.9529,
+        "counterfactual_value": 1.9529,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 15.8861,
+        "absolute_reduction": 1.6512,
+        "percentage_reduction": 9.42,
+        "rank": 3,
+        "interpretation": "If eda had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 9.42% (from 17.5373 to 15.8861). This describes mathematical sensitivity of the score, not a health outcome."
+      },
+      {
+        "feature": "fatigue_score",
+        "original_value": 5.65,
+        "baseline_value": 1.9286,
+        "counterfactual_value": 1.9286,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 16.1133,
+        "absolute_reduction": 1.424,
+        "percentage_reduction": 8.12,
+        "rank": 4,
+        "interpretation": "If fatigue_score had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 8.12% (from 17.5373 to 16.1133). This describes mathematical sensitivity of the score, not a health outcome."
+      },
+      {
+        "feature": "hrv_ms",
+        "original_value": 44.7,
+        "baseline_value": 61.9857,
+        "counterfactual_value": 61.9857,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 16.7057,
+        "absolute_reduction": 0.8315,
+        "percentage_reduction": 4.74,
+        "rank": 5,
+        "interpretation": "If hrv_ms had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 4.74% (from 17.5373 to 16.7057). This describes mathematical sensitivity of the score, not a health outcome."
+      },
+      {
+        "feature": "resting_hr_bpm",
+        "original_value": 69.3,
+        "baseline_value": 62.6357,
+        "counterfactual_value": 62.6357,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 16.8743,
+        "absolute_reduction": 0.6629,
+        "percentage_reduction": 3.78,
+        "rank": 6,
+        "interpretation": "If resting_hr_bpm had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 3.78% (from 17.5373 to 16.8743). This describes mathematical sensitivity of the score, not a health outcome."
+      },
+      {
+        "feature": "steps",
+        "original_value": 5591.0,
+        "baseline_value": 8818.7857,
+        "counterfactual_value": 8818.7857,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 17.1205,
+        "absolute_reduction": 0.4168,
+        "percentage_reduction": 2.38,
+        "rank": 7,
+        "interpretation": "If steps had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 2.38% (from 17.5373 to 17.1205). This describes mathematical sensitivity of the score, not a health outcome."
+      },
+      {
+        "feature": "temperature_f",
+        "original_value": 98.61,
+        "baseline_value": 98.04,
+        "counterfactual_value": 98.04,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 17.3673,
+        "absolute_reduction": 0.17,
+        "percentage_reduction": 0.97,
+        "rank": 8,
+        "interpretation": "If temperature_f had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 0.97% (from 17.5373 to 17.3673). This describes mathematical sensitivity of the score, not a health outcome."
+      },
+      {
+        "feature": "respiratory_rate",
+        "original_value": 15.9,
+        "baseline_value": 14.95,
+        "counterfactual_value": 14.95,
+        "original_deviation_score": 17.5373,
+        "counterfactual_deviation_score": 17.4927,
+        "absolute_reduction": 0.0446,
+        "percentage_reduction": 0.25,
+        "rank": 9,
+        "interpretation": "If respiratory_rate had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 0.25% (from 17.5373 to 17.4927). This describes mathematical sensitivity of the score, not a health outcome."
+      }
+    ],
+    "most_influential_counterfactual": {
+      "feature": "stress_score",
+      "original_value": 6.5,
+      "baseline_value": 2.0229,
+      "counterfactual_value": 2.0229,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 15.4782,
+      "absolute_reduction": 2.0591,
+      "percentage_reduction": 11.74,
+      "interpretation": "If stress_score had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 11.74% (from 17.5373 to 15.4782). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    "combined_counterfactual": {
+      "features_normalized": [
+        "stress_score",
+        "sleep_hours",
+        "eda"
+      ],
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 11.0065,
+      "absolute_reduction": 6.5308,
+      "percentage_reduction": 37.24,
+      "interpretation": "If the three most influential measured signals (stress_score, sleep_hours, eda) had simultaneously remained near this patient's personal baseline, the overall deviation score would decrease by 37.24% (from 17.5373 to 11.0065). TRACE can explore signal combinations, not only one variable at a time. This is mathematical sensitivity, not a clinical prediction."
+    },
+    "interpretation_confidence_context": {
+      "interpretation_confidence": 66.76,
+      "confidence_band": "Moderate",
+      "note": "Interpretation confidence is carried over from the AI Self-Check feature and is NOT recalculated here. Counterfactual results describe the mathematical sensitivity of TRACE's deviation score to the measured signals, not diagnostic confidence or clinical outcomes."
+    },
+    "disclaimer": "Counterfactual results show mathematical sensitivity of TRACE's deviation score to measured signals. They do not predict clinical outcomes or represent treatment recommendations."
+  },
+  "trajectories": {
+    "simulation_horizon": "Day 31-37",
+    "scenarios": [
+      {
+        "scenario_name": "Recovery toward baseline",
+        "description": "Signals gradually move toward the patient's personal baseline over the 7 simulated days.",
+        "starting_deviation_score": 17.5373,
+        "ending_deviation_score": 7.0015,
+        "change_in_deviation": -10.5357,
+        "trajectory_direction": "toward baseline",
+        "daily_values": [
+          {
+            "day": 31,
+            "date": "2025-01-31",
+            "deviation_score": 16.0297,
+            "sleep_hours": 5.3754,
+            "hrv_ms": 46.1255,
+            "resting_hr_bpm": 68.7462,
+            "steps": 5880.9809,
+            "temperature_f": 98.5535,
+            "respiratory_rate": 15.8021,
+            "eda": 5.261,
+            "fatigue_score": 5.3282,
+            "stress_score": 6.1161
+          },
+          {
+            "day": 32,
+            "date": "2025-02-01",
+            "deviation_score": 14.5282,
+            "sleep_hours": 5.5735,
+            "hrv_ms": 47.7107,
+            "resting_hr_bpm": 68.1756,
+            "steps": 6145.2693,
+            "temperature_f": 98.5167,
+            "respiratory_rate": 15.7431,
+            "eda": 4.943,
+            "fatigue_score": 5.0153,
+            "stress_score": 5.7238
+          },
+          {
+            "day": 33,
+            "date": "2025-02-02",
+            "deviation_score": 13.0244,
+            "sleep_hours": 5.786,
+            "hrv_ms": 49.1422,
+            "resting_hr_bpm": 67.582,
+            "steps": 6411.3635,
+            "temperature_f": 98.4682,
+            "respiratory_rate": 15.6538,
+            "eda": 4.6364,
+            "fatigue_score": 4.6899,
+            "stress_score": 5.3536
+          },
+          {
+            "day": 34,
+            "date": "2025-02-03",
+            "deviation_score": 11.5195,
+            "sleep_hours": 5.9873,
+            "hrv_ms": 50.6488,
+            "resting_hr_bpm": 67.0251,
+            "steps": 6727.9842,
+            "temperature_f": 98.413,
+            "respiratory_rate": 15.5678,
+            "eda": 4.3232,
+            "fatigue_score": 4.3796,
+            "stress_score": 4.9752
+          },
+          {
+            "day": 35,
+            "date": "2025-02-04",
+            "deviation_score": 10.0205,
+            "sleep_hours": 6.1888,
+            "hrv_ms": 52.0628,
+            "resting_hr_bpm": 66.4247,
+            "steps": 6983.5458,
+            "temperature_f": 98.3686,
+            "respiratory_rate": 15.4997,
+            "eda": 4.0144,
+            "fatigue_score": 4.0572,
+            "stress_score": 4.5823
+          },
+          {
+            "day": 36,
+            "date": "2025-02-05",
+            "deviation_score": 8.5035,
+            "sleep_hours": 6.3944,
+            "hrv_ms": 53.6368,
+            "resting_hr_bpm": 65.8778,
+            "steps": 7260.614,
+            "temperature_f": 98.3171,
+            "respiratory_rate": 15.4151,
+            "eda": 3.7149,
+            "fatigue_score": 3.7231,
+            "stress_score": 4.1946
+          },
+          {
+            "day": 37,
+            "date": "2025-02-06",
+            "deviation_score": 7.0015,
+            "sleep_hours": 6.5948,
+            "hrv_ms": 55.0369,
+            "resting_hr_bpm": 65.295,
+            "steps": 7548.8322,
+            "temperature_f": 98.2646,
+            "respiratory_rate": 15.3423,
+            "eda": 3.3861,
+            "fatigue_score": 3.4142,
+            "stress_score": 3.8152
+          }
+        ]
+      },
+      {
+        "scenario_name": "Persistent deviation",
+        "description": "Signals remain near their current values with small deterministic variation and no strong directional trend.",
+        "starting_deviation_score": 17.5373,
+        "ending_deviation_score": 17.5763,
+        "change_in_deviation": 0.0391,
+        "trajectory_direction": "approximately stable",
+        "daily_values": [
+          {
+            "day": 31,
+            "date": "2025-01-31",
+            "deviation_score": 17.472,
+            "sleep_hours": 5.1788,
+            "hrv_ms": 44.8152,
+            "resting_hr_bpm": 69.3553,
+            "steps": 5576.1915,
+            "temperature_f": 98.6046,
+            "respiratory_rate": 15.9326,
+            "eda": 5.5653,
+            "fatigue_score": 5.6157,
+            "stress_score": 6.4692
+          },
+          {
+            "day": 32,
+            "date": "2025-02-01",
+            "deviation_score": 17.5606,
+            "sleep_hours": 5.1562,
+            "hrv_ms": 44.7805,
+            "resting_hr_bpm": 69.3099,
+            "steps": 5620.3213,
+            "temperature_f": 98.605,
+            "respiratory_rate": 15.906,
+            "eda": 5.5852,
+            "fatigue_score": 5.6417,
+            "stress_score": 6.5124
+          },
+          {
+            "day": 33,
+            "date": "2025-02-02",
+            "deviation_score": 17.5877,
+            "sleep_hours": 5.1601,
+            "hrv_ms": 44.6412,
+            "resting_hr_bpm": 69.2734,
+            "steps": 5540.219,
+            "temperature_f": 98.6157,
+            "respiratory_rate": 15.8822,
+            "eda": 5.5703,
+            "fatigue_score": 5.6629,
+            "stress_score": 6.5121
+          },
+          {
+            "day": 34,
+            "date": "2025-02-03",
+            "deviation_score": 17.4641,
+            "sleep_hours": 5.18,
+            "hrv_ms": 44.684,
+            "resting_hr_bpm": 69.2705,
+            "steps": 5587.6148,
+            "temperature_f": 98.5903,
+            "respiratory_rate": 15.845,
+            "eda": 5.5378,
+            "fatigue_score": 5.6232,
+            "stress_score": 6.5109
+          },
+          {
+            "day": 35,
+            "date": "2025-02-04",
+            "deviation_score": 17.5562,
+            "sleep_hours": 5.1565,
+            "hrv_ms": 44.6387,
+            "resting_hr_bpm": 69.3906,
+            "steps": 5575.8714,
+            "temperature_f": 98.6186,
+            "respiratory_rate": 15.8645,
+            "eda": 5.565,
+            "fatigue_score": 5.6245,
+            "stress_score": 6.4908
+          },
+          {
+            "day": 36,
+            "date": "2025-02-05",
+            "deviation_score": 17.5356,
+            "sleep_hours": 5.1826,
+            "hrv_ms": 44.4202,
+            "resting_hr_bpm": 69.3303,
+            "steps": 5601.0954,
+            "temperature_f": 98.603,
+            "respiratory_rate": 15.845,
+            "eda": 5.5718,
+            "fatigue_score": 5.6358,
+            "stress_score": 6.5063
+          },
+          {
+            "day": 37,
+            "date": "2025-02-06",
+            "deviation_score": 17.5763,
+            "sleep_hours": 5.1703,
+            "hrv_ms": 44.9594,
+            "resting_hr_bpm": 69.2833,
+            "steps": 5547.5375,
+            "temperature_f": 98.6121,
+            "respiratory_rate": 15.9084,
+            "eda": 5.6031,
+            "fatigue_score": 5.6724,
+            "stress_score": 6.5097
+          }
+        ]
+      },
+      {
+        "scenario_name": "Continued divergence",
+        "description": "Signals extend their recent observed trend, dampened and clipped to avoid exaggerated change.",
+        "starting_deviation_score": 17.5373,
+        "ending_deviation_score": 24.7245,
+        "change_in_deviation": 7.1873,
+        "trajectory_direction": "away from baseline",
+        "daily_values": [
+          {
+            "day": 31,
+            "date": "2025-01-31",
+            "deviation_score": 18.5383,
+            "sleep_hours": 5.0733,
+            "hrv_ms": 43.3682,
+            "resting_hr_bpm": 69.7151,
+            "steps": 5290.3636,
+            "temperature_f": 98.6844,
+            "respiratory_rate": 15.9475,
+            "eda": 5.7946,
+            "fatigue_score": 5.816,
+            "stress_score": 6.7348
+          },
+          {
+            "day": 32,
+            "date": "2025-02-01",
+            "deviation_score": 19.5788,
+            "sleep_hours": 4.9452,
+            "hrv_ms": 42.2688,
+            "resting_hr_bpm": 70.2089,
+            "steps": 5076.9188,
+            "temperature_f": 98.7818,
+            "respiratory_rate": 16.0593,
+            "eda": 5.9898,
+            "fatigue_score": 5.9578,
+            "stress_score": 7.0161
+          },
+          {
+            "day": 33,
+            "date": "2025-02-02",
+            "deviation_score": 20.6048,
+            "sleep_hours": 4.8385,
+            "hrv_ms": 40.9767,
+            "resting_hr_bpm": 70.5938,
+            "steps": 4748.8571,
+            "temperature_f": 98.8471,
+            "respiratory_rate": 16.1295,
+            "eda": 6.217,
+            "fatigue_score": 6.1428,
+            "stress_score": 7.2441
+          },
+          {
+            "day": 34,
+            "date": "2025-02-03",
+            "deviation_score": 21.6478,
+            "sleep_hours": 4.7327,
+            "hrv_ms": 39.7788,
+            "resting_hr_bpm": 71.1212,
+            "steps": 4475.3447,
+            "temperature_f": 98.9233,
+            "respiratory_rate": 16.1916,
+            "eda": 6.42,
+            "fatigue_score": 6.313,
+            "stress_score": 7.514
+          },
+          {
+            "day": 35,
+            "date": "2025-02-04",
+            "deviation_score": 22.6841,
+            "sleep_hours": 4.6453,
+            "hrv_ms": 38.4833,
+            "resting_hr_bpm": 71.5255,
+            "steps": 4172.2935,
+            "temperature_f": 98.9998,
+            "respiratory_rate": 16.2849,
+            "eda": 6.6497,
+            "fatigue_score": 6.4954,
+            "stress_score": 7.7711
+          },
+          {
+            "day": 36,
+            "date": "2025-02-05",
+            "deviation_score": 23.7393,
+            "sleep_hours": 4.5235,
+            "hrv_ms": 37.2858,
+            "resting_hr_bpm": 71.8875,
+            "steps": 3884.1489,
+            "temperature_f": 99.0719,
+            "respiratory_rate": 16.3846,
+            "eda": 6.8701,
+            "fatigue_score": 6.6635,
+            "stress_score": 8.0408
+          },
+          {
+            "day": 37,
+            "date": "2025-02-06",
+            "deviation_score": 24.7245,
+            "sleep_hours": 4.422,
+            "hrv_ms": 36.115,
+            "resting_hr_bpm": 72.3567,
+            "steps": 3658.495,
+            "temperature_f": 99.1503,
+            "respiratory_rate": 16.4591,
+            "eda": 7.0868,
+            "fatigue_score": 6.8168,
+            "stress_score": 8.273
+          }
+        ]
+      }
+    ],
+    "divergence": {
+      "divergence_day": 31,
+      "divergence_date": "2025-01-31",
+      "scenario_score_spread": 2.5085,
+      "separation_criterion": 0.5,
+      "fork_drivers": [
+        {
+          "feature": "stress_score",
+          "standardized_separation": 3.4183
+        },
+        {
+          "feature": "eda",
+          "standardized_separation": 3.2877
+        },
+        {
+          "feature": "sleep_hours",
+          "standardized_separation": 3.0298
+        }
+      ]
+    },
+    "interpretation_confidence_context": {
+      "interpretation_confidence": 66.76,
+      "confidence_band": "Moderate",
+      "note": "Interpretation confidence is carried over from the AI Self-Check feature and is not recalculated here. Trajectories are exploratory simulations, not probabilistic forecasts."
+    },
+    "explanation": "From the patient's state observed through Day 30 (starting deviation 17.537), TRACE simulated three exploratory 7-day paths. The scenarios become meaningfully separated around Day 31 (2025-01-31), where the deviation-score spread reaches 2.509. The features that most separate the paths at that point are: stress_score, eda, sleep_hours. These are mathematical what-if paths under different assumptions, not forecasts.",
+    "disclaimer": "HealthFork trajectories are exploratory simulations showing how TRACE's measured deviation could evolve under different mathematical assumptions. They are not forecasts of a patient's health, disease progression, or treatment outcomes."
+  },
+  "demo_summary": {
+    "headline": "TRACE found where the story changed.",
+    "detected_change_day": 20,
+    "current_deviation_status": "Strong deviation",
+    "top_changed_signals": [
+      "sleep_hours",
+      "resting_hr_bpm",
+      "respiratory_rate",
+      "fatigue_score"
+    ],
+    "most_valuable_missing_information": "subjective_stress_level",
+    "interpretation_confidence": 66.76,
+    "confidence_band": "Moderate",
+    "most_influential_counterfactual": "stress_score",
+    "trajectory_fork_day": 31,
+    "one_sentence_summary": "TRACE detected a sustained physiological shift around Day 20, identified the strongest contributing signals (sleep_hours, resting_hr_bpm, respiratory_rate, fatigue_score), highlighted 'subjective_stress_level' as the most valuable missing context, and tested how the interpretation changes under counterfactual and trajectory scenarios \u2014 with an interpretation confidence of 66.76 (Moderate)."
+  }
+}

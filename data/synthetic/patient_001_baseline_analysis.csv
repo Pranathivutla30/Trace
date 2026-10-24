@@ -1,0 +1,31 @@
+date,day,baseline_deviation_score,baseline_status,top_contributor_1,top_contributor_2,top_contributor_3
+2025-01-01,1,0.9948,Within personal baseline,temperature_f,respiratory_rate,hrv_ms
+2025-01-02,2,1.0606,Mild deviation,stress_score,sleep_hours,temperature_f
+2025-01-03,3,0.7899,Within personal baseline,temperature_f,sleep_hours,steps
+2025-01-04,4,1.0654,Mild deviation,steps,stress_score,fatigue_score
+2025-01-05,5,0.8745,Within personal baseline,resting_hr_bpm,respiratory_rate,hrv_ms
+2025-01-06,6,0.809,Within personal baseline,fatigue_score,eda,hrv_ms
+2025-01-07,7,1.0054,Mild deviation,eda,respiratory_rate,steps
+2025-01-08,8,1.1022,Mild deviation,stress_score,fatigue_score,respiratory_rate
+2025-01-09,9,0.6846,Within personal baseline,sleep_hours,eda,stress_score
+2025-01-10,10,0.8362,Within personal baseline,steps,fatigue_score,sleep_hours
+2025-01-11,11,1.0168,Mild deviation,temperature_f,respiratory_rate,eda
+2025-01-12,12,1.0056,Mild deviation,resting_hr_bpm,sleep_hours,respiratory_rate
+2025-01-13,13,0.9465,Within personal baseline,hrv_ms,respiratory_rate,sleep_hours
+2025-01-14,14,1.1718,Mild deviation,eda,hrv_ms,fatigue_score
+2025-01-15,15,1.478,Mild deviation,stress_score,sleep_hours,respiratory_rate
+2025-01-16,16,1.657,Mild deviation,temperature_f,fatigue_score,steps
+2025-01-17,17,1.2819,Mild deviation,stress_score,resting_hr_bpm,temperature_f
+2025-01-18,18,1.4374,Mild deviation,resting_hr_bpm,sleep_hours,stress_score
+2025-01-19,19,1.4472,Mild deviation,fatigue_score,stress_score,resting_hr_bpm
+2025-01-20,20,2.6984,Moderate deviation,fatigue_score,sleep_hours,respiratory_rate
+2025-01-21,21,2.8721,Moderate deviation,sleep_hours,fatigue_score,eda
+2025-01-22,22,4.2765,Strong deviation,fatigue_score,sleep_hours,stress_score
+2025-01-23,23,5.903,Strong deviation,sleep_hours,fatigue_score,hrv_ms
+2025-01-24,24,8.2476,Strong deviation,sleep_hours,stress_score,fatigue_score
+2025-01-25,25,8.8009,Strong deviation,sleep_hours,stress_score,fatigue_score
+2025-01-26,26,11.1102,Strong deviation,stress_score,sleep_hours,fatigue_score
+2025-01-27,27,11.8544,Strong deviation,sleep_hours,fatigue_score,stress_score
+2025-01-28,28,14.1707,Strong deviation,sleep_hours,stress_score,fatigue_score
+2025-01-29,29,15.1127,Strong deviation,stress_score,eda,sleep_hours
+2025-01-30,30,17.5386,Strong deviation,stress_score,sleep_hours,eda

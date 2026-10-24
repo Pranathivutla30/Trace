@@ -1,0 +1,50 @@
+{
+  "patient_id": "patient_001",
+  "baseline_period": "Days 1-14",
+  "baseline_statistics": {
+    "sleep_hours": {
+      "mean": 7.5486,
+      "std": 0.0997
+    },
+    "hrv_ms": {
+      "mean": 61.9857,
+      "std": 1.0798
+    },
+    "resting_hr_bpm": {
+      "mean": 62.6357,
+      "std": 0.4651
+    },
+    "steps": {
+      "mean": 8818.7857,
+      "std": 283.098
+    },
+    "temperature_f": {
+      "mean": 98.04,
+      "std": 0.078
+    },
+    "respiratory_rate": {
+      "mean": 14.95,
+      "std": 0.2534
+    },
+    "eda": {
+      "mean": 1.9529,
+      "std": 0.1623
+    },
+    "fatigue_score": {
+      "mean": 1.9286,
+      "std": 0.1792
+    },
+    "stress_score": {
+      "mean": 2.0229,
+      "std": 0.181
+    }
+  },
+  "latest_day": 30,
+  "latest_deviation_score": 17.5386,
+  "latest_status": "Strong deviation",
+  "latest_top_contributors": [
+    "stress_score",
+    "sleep_hours",
+    "eda"
+  ]
+}
