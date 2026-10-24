@@ -67,20 +67,44 @@ normal," "not a health risk") across dozens of components without us re-stating
 it each time — and it refused to let profile data leak into the model even as the
 UI grew.
 
-## Agent hooks, MCP, Property-based testing, Powers — honest scope
+## Agent hooks
 
-To be transparent about what we did and didn't use:
+We added a Kiro **agent hook** (`.kiro/hooks/build-on-save.json`): a
+`PostFileSave` hook, scoped by a matcher to `frontend/src/**/*.{js,jsx,css}`,
+that runs the Vite production build whenever a frontend source file is saved.
+Because TRACE's dashboard is a chain of many small components, this turned
+"did my last edit break the build?" from a manual step into an automatic,
+immediate check — the hook surfaces a broken build the moment it happens instead
+of at the next release. It made iterating on the UI safe and fast.
 
-- **Agent hooks / MCP / PBT / Powers:** we did **not** use these for TRACE. Given
-  the hackathon timeline, we focused our Kiro usage on spec-driven development and
-  steering, which gave us the most leverage for a safety-critical, multi-layer
-  project. Our verification instead ran through the IDE agent executing real
-  commands (`npm run build`, live FastAPI endpoint checks) after every change.
-- A natural **next step** we'd pursue with more time: a **PostFileSave hook** to
-  auto-run the frontend build and a backend smoke test, and **property-based
-  tests** for the pipeline invariants our spec already names (e.g. the baseline
-  z-score is 0 when a value equals its baseline; the RMS deviation is
-  monotonic in the number of deviating signals).
+## Property-based testing (PBT)
+
+We used **Hypothesis** to property-test the pipeline's mathematical invariants —
+the guarantees that fixed-example unit tests tend to miss
+(`ai_ml/tests/test_properties.py`). Rather than checking one case, these generate
+hundreds of random inputs and assert properties that must *always* hold:
+
+- The multivariate deviation score is **exactly 0** when every signal equals its
+  baseline, and is **always non-negative and finite** for finite inputs.
+- The **counterfactual invariant**: resetting any one signal to its baseline can
+  only lower (never raise) the overall deviation — the exact property the
+  "What If?" feature depends on.
+- If every signal sits `k` standard deviations from its mean, the RMS deviation
+  equals `|k|` (a clean correctness check on the z-score math).
+- The adapter's Fahrenheit→Celsius conversion round-trips and keeps body-temp
+  values in a plausible range.
+
+PBT gave us confidence that these core guarantees hold for *any* patient data,
+not just the synthetic and f16 examples — important for a tool that must never
+misreport a deviation.
+
+## MCP and Powers — honest scope
+
+We did **not** use MCP servers or Kiro Powers for TRACE. Given the hackathon
+timeline we concentrated our Kiro usage where it had the most leverage for a
+safety-critical, multi-layer project: spec-driven development, steering,
+an agent hook, and property-based tests, all verified by the IDE agent running
+real commands (`npm run build`, live FastAPI endpoint checks, `pytest`).
 
 ## Net effect
 

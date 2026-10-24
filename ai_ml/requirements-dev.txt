@@ -1,0 +1,5 @@
+# Dev/test dependencies for TRACE property-based tests.
+# Run: python -m pytest ai_ml/tests/ -q
+numpy
+pytest
+hypothesis
