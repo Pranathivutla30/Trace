@@ -173,11 +173,14 @@ explore the dashboard. Switch sources any time from the top toggle.
 
 ## Data & attribution
 
-Real wearable data: *Wearable Device Dataset from Induced Stress and Structured
-Exercise Sessions (v1.0.1), PhysioNet* — Hongn, A., Bosch, F., Prado, L., &
-Bonomini, P. (2025). https://doi.org/10.13026/he0v-tf17 . Raw dataset files are
-**not** redistributed in this repo; only processed window features and derived
-analysis JSON are included.
+Real wearable data contains information from the *Wearable Device Dataset from
+Induced Stress and Structured Exercise Sessions (v1.0.1), PhysioNet* — Hongn, A.,
+Bosch, F., Prado, L., & Bonomini, P. (2025). https://doi.org/10.13026/he0v-tf17 .
+The dataset is made available under the **Open Data Commons Attribution License
+(ODC-By) v1.0** (https://opendatacommons.org/licenses/by/1-0/), which permits
+derivative works with attribution. Raw dataset files are **not** redistributed
+here; only processed window features (a derivative database) and derived analysis
+JSON are included, with attribution in `data/processed/physionet/README.md`.
 
 ## Disclaimer
 
