@@ -49,18 +49,28 @@ export default function TemporalTrace({
     seq[o.signal] = { t: o.first_change_t, rank: i + 1 };
   });
 
-  const detectedLagMsg =
-    timeUnit === "minute" && typeof detectedT === "number" && typeof actualT === "number"
-      ? `TRACE detected the change ${detectedT - actualT} min after the known event.`
-      : null;
+  let detectedLagMsg = null;
+  if (
+    timeUnit === "minute" &&
+    typeof detectedT === "number" &&
+    typeof actualT === "number"
+  ) {
+    const diff = Math.round(Math.abs(detectedT - actualT) * 100) / 100;
+    if (diff === 0) {
+      detectedLagMsg = "TRACE detected the change at the recorded event.";
+    } else {
+      const dir = detectedT < actualT ? "before" : "after";
+      detectedLagMsg = `TRACE detected the change ${diff} min ${dir} the recorded event.`;
+    }
+  }
 
   const mid = Math.round((first + lastT) / 2);
 
   return (
     <Card id="trace" className="span-8" delay={0.05}>
       <CardHead
-        title="Where Did It Change?"
-        eyebrow="BioTimeMachine · the earliest coordinated shift in the story"
+        title="BioTimeMachine — Where It Changed"
+        eyebrow="The first day the signals started shifting together"
         right={
           <div className="chips">
             <span className="chip">
@@ -75,6 +85,8 @@ export default function TemporalTrace({
         }
       />
 
+      <p className="help-line">The orange line marks the day TRACE thinks the pattern started changing. Everything after it is shaded.</p>
+
       <div className="trace-list" ref={ref}>
         {availableSignals.map((key, i) => {
           const meta = signalMeta(key);
@@ -85,6 +97,7 @@ export default function TemporalTrace({
                 <span className="sig-dot" style={{ background: meta.color, boxShadow: `0 0 0 4px ${meta.color}22` }} />
                 <div style={{ minWidth: 0 }}>
                   <div className="trace-name">{meta.label}</div>
+                  {meta.full && <div className="sig-full">{meta.full}</div>}
                   <div className="trace-unit">
                     {meta.unit}
                     {s && typeof s.t === "number" && (

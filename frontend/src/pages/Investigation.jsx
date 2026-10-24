@@ -16,6 +16,8 @@ import MissingEvidence from "../components/MissingEvidence.jsx";
 import SelfCheck from "../components/SelfCheck.jsx";
 import Counterfactual from "../components/Counterfactual.jsx";
 import Trajectory from "../components/Trajectory.jsx";
+import MlAnomaly from "../components/MlAnomaly.jsx";
+import YourContext from "../components/YourContext.jsx";
 import Aurora from "../components/Aurora.jsx";
 import TopBar from "../components/TopBar.jsx";
 import Sidebar, { NAV } from "../components/Sidebar.jsx";
@@ -26,9 +28,9 @@ import { useScrollSpy, useTheme } from "../hooks/useUi.js";
 const CITATION =
   "Hongn, A., Bosch, F., Prado, L., & Bonomini, P. (2025). Wearable Device Dataset from Induced Stress and Structured Exercise Sessions (v1.0.1). PhysioNet. https://doi.org/10.13026/he0v-tf17";
 
-export default function Investigation() {
+export default function Investigation({ initialSource = "synthetic", profileControl = null, userName = "" }) {
   const [sources, setSources] = useState([]);
-  const [source, setSource] = useState("synthetic");
+  const [source, setSource] = useState(initialSource);
   const [patient, setPatient] = useState(null);
   const [timeline, setTimeline] = useState(null);
   const [analysis, setAnalysis] = useState(null);
@@ -45,7 +47,7 @@ export default function Investigation() {
   // Refetch whenever the source changes.
   useEffect(() => {
     const meta = sourcePatientId(sources, source);
-    const patientId = meta || (source === "real" ? "S01" : "001");
+    const patientId = meta || (source === "real" ? "f16" : "001");
 
     let cancelled = false;
     setLoading(true);
@@ -70,7 +72,7 @@ export default function Investigation() {
     };
   }, [source, sources]);
 
-  const patientId = patient?.id || (source === "real" ? "S01" : "001");
+  const patientId = patient?.id || (source === "real" ? "f16" : "001");
   const available = timeline?.available_signals || patient?.available_signals || [];
   const timeUnit = timeline?.time_unit || patient?.time_unit;
   const changePoint = timeline?.change_point;
@@ -83,8 +85,14 @@ export default function Investigation() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  const tl = timeline?.timeline;
+  const isReal = source === "real";
+  // Counterfactual and HealthFork exist only for the synthetic demo.
+  const hasWhatIf = !!analysis?.counterfactuals;
+  const hasTrajectories = !!(analysis?.trajectories && analysis.trajectories.length);
+
   const subtitle = patient
-    ? `${windowLabel(patient)} · ${available.length} signals · story changed ${fmtT(detectedT, timeUnit)}`
+    ? `${windowLabel(patient, tl)} · ${available.length} signals · story changed ${fmtT(detectedT, timeUnit)}`
     : "Find where the story changed.";
 
   return (
@@ -96,20 +104,23 @@ export default function Investigation() {
           onNav={jump}
           counts={{ missing: analysis?.missing_evidence?.most_valuable_missing?.length }}
           patientId={patientId}
-          subtitle={windowLabel(patient)}
+          userName={userName}
+          subtitle={windowLabel(patient, tl)}
           theme={theme}
           onTheme={setTheme}
+          hiddenIds={navHidden(hasWhatIf, hasTrajectories, !!analysis?.ml_transition_model)}
         />
 
         <main className="main">
           <TopBar
-            title={`Investigating Patient ${patientId}`}
+            title={userName ? `${userName}'s Investigation` : "TRACE Investigation"}
             subtitle={subtitle}
             sources={sourceList}
             source={source}
             onChange={setSource}
             loading={loading}
-            onCta={() => jump("whatif")}
+            onCta={hasWhatIf ? () => jump("whatif") : null}
+            profileControl={profileControl}
           />
 
           {error && (
@@ -134,12 +145,23 @@ export default function Investigation() {
               </div>
 
               <div className="bento">
+                <YourContext
+                  source={source}
+                  analysis={analysis}
+                  timeUnit={timeUnit}
+                  changePoint={changePoint}
+                />
+              </div>
+
+              <div className="bento">
                 <PatientCard
                   patient={patient}
                   availableSignals={available}
                   changePoint={changePoint}
                   sourceLabel={sourceLabel}
                   onJump={() => jump("trace")}
+                  timeline={tl}
+                  userName={userName}
                 />
                 <Counterfactual
                   counterfactuals={analysis?.counterfactuals}
@@ -168,6 +190,17 @@ export default function Investigation() {
                 </div>
               </div>
 
+              {analysis?.ml_transition_model && (
+                <div className="bento">
+                  <MlAnomaly
+                    model={analysis.ml_transition_model}
+                    timeline={timeline?.timeline}
+                    timeUnit={timeUnit}
+                    changePoint={changePoint}
+                  />
+                </div>
+              )}
+
               <div className="bento">
                 <Baseline
                   baseline={analysis?.baseline}
@@ -179,7 +212,16 @@ export default function Investigation() {
             </div>
           )}
 
-          <footer className="cite">{CITATION}</footer>
+          <footer className="cite">
+            {isReal ? (
+              CITATION
+            ) : (
+              <>
+                Synthetic demonstration patient generated for TRACE. For
+                demonstration of the full temporal investigation workflow.
+              </>
+            )}
+          </footer>
         </main>
       </div>
     </>
@@ -203,10 +245,22 @@ function Skeleton() {
 
 const DEFAULT_SOURCES = [
   { id: "synthetic", label: "Synthetic Demo", patient_id: "001" },
-  { id: "real", label: "Real Wearable Data", patient_id: "S01" },
+  { id: "real", label: "Real Wearable Data", patient_id: "f16" },
 ];
 
 function sourcePatientId(sources, source) {
   const found = sources.find((s) => s.id === source);
   return found?.patient_id;
+}
+
+// Which sidebar nav ids to hide for the current source. Counterfactual
+// ("whatif") and HealthFork ("trajectories") exist only for the synthetic
+// demo; the ML section is real-only. Hidden sections simply aren't in the DOM,
+// so the scroll-spy skips them safely.
+function navHidden(hasWhatIf, hasTrajectories, hasMl) {
+  const hidden = [];
+  if (!hasWhatIf) hidden.push("whatif");
+  if (!hasTrajectories) hidden.push("trajectories");
+  if (!hasMl) hidden.push("mlanomaly");
+  return hidden;
 }

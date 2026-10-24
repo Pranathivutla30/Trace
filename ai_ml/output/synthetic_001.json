@@ -1,0 +1,636 @@
+{
+  "id": "001",
+  "source": "synthetic",
+  "time_unit": "day",
+  "window": "Day -29 to Day 0",
+  "available_signals": [
+    "sleep_h",
+    "hrv_ms",
+    "resting_hr",
+    "steps",
+    "temp_c",
+    "resp_rate",
+    "eda",
+    "fatigue",
+    "stress"
+  ],
+  "timeline": [
+    {
+      "t": -29,
+      "sleep_h": 7.6,
+      "hrv_ms": 60.8,
+      "resting_hr": 63.1,
+      "steps": 9032,
+      "temp_c": 36.6056,
+      "resp_rate": 14.6,
+      "eda": 2.03,
+      "fatigue": 1.92,
+      "stress": 1.99
+    },
+    {
+      "t": -28,
+      "sleep_h": 7.42,
+      "hrv_ms": 63.1,
+      "resting_hr": 63.1,
+      "steps": 8770,
+      "temp_c": 36.7444,
+      "resp_rate": 15.1,
+      "eda": 1.83,
+      "fatigue": 2.09,
+      "stress": 1.71
+    },
+    {
+      "t": -27,
+      "sleep_h": 7.68,
+      "hrv_ms": 61.9,
+      "resting_hr": 62.4,
+      "steps": 8546,
+      "temp_c": 36.75,
+      "resp_rate": 15.0,
+      "eda": 1.91,
+      "fatigue": 1.91,
+      "stress": 2.16
+    },
+    {
+      "t": -26,
+      "sleep_h": 7.6,
+      "hrv_ms": 62.5,
+      "resting_hr": 62.8,
+      "steps": 9392,
+      "temp_c": 36.6778,
+      "resp_rate": 14.8,
+      "eda": 1.84,
+      "fatigue": 2.15,
+      "stress": 2.34
+    },
+    {
+      "t": -25,
+      "sleep_h": 7.53,
+      "hrv_ms": 61.0,
+      "resting_hr": 61.8,
+      "steps": 8945,
+      "temp_c": 36.7278,
+      "resp_rate": 15.2,
+      "eda": 1.87,
+      "fatigue": 2.06,
+      "stress": 2.04
+    },
+    {
+      "t": -24,
+      "sleep_h": 7.58,
+      "hrv_ms": 63.0,
+      "resting_hr": 62.7,
+      "steps": 8954,
+      "temp_c": 36.7,
+      "resp_rate": 15.1,
+      "eda": 2.13,
+      "fatigue": 1.64,
+      "stress": 1.9
+    },
+    {
+      "t": -23,
+      "sleep_h": 7.48,
+      "hrv_ms": 61.2,
+      "resting_hr": 62.3,
+      "steps": 9198,
+      "temp_c": 36.6556,
+      "resp_rate": 15.3,
+      "eda": 1.66,
+      "fatigue": 1.92,
+      "stress": 2.05
+    },
+    {
+      "t": -22,
+      "sleep_h": 7.64,
+      "hrv_ms": 62.9,
+      "resting_hr": 63.1,
+      "steps": 8645,
+      "temp_c": 36.6722,
+      "resp_rate": 15.3,
+      "eda": 1.96,
+      "fatigue": 1.68,
+      "stress": 1.66
+    },
+    {
+      "t": -21,
+      "sleep_h": 7.41,
+      "hrv_ms": 62.6,
+      "resting_hr": 62.6,
+      "steps": 8957,
+      "temp_c": 36.6778,
+      "resp_rate": 15.0,
+      "eda": 2.13,
+      "fatigue": 1.92,
+      "stress": 2.14
+    },
+    {
+      "t": -20,
+      "sleep_h": 7.45,
+      "hrv_ms": 61.6,
+      "resting_hr": 62.2,
+      "steps": 8391,
+      "temp_c": 36.7167,
+      "resp_rate": 14.9,
+      "eda": 2.0,
+      "fatigue": 2.12,
+      "stress": 2.13
+    },
+    {
+      "t": -19,
+      "sleep_h": 7.65,
+      "hrv_ms": 61.9,
+      "resting_hr": 62.2,
+      "steps": 8726,
+      "temp_c": 36.6222,
+      "resp_rate": 14.6,
+      "eda": 1.74,
+      "fatigue": 1.75,
+      "stress": 2.12
+    },
+    {
+      "t": -18,
+      "sleep_h": 7.41,
+      "hrv_ms": 61.5,
+      "resting_hr": 63.5,
+      "steps": 8643,
+      "temp_c": 36.7278,
+      "resp_rate": 14.7,
+      "eda": 1.96,
+      "fatigue": 1.76,
+      "stress": 1.9
+    },
+    {
+      "t": -17,
+      "sleep_h": 7.68,
+      "hrv_ms": 59.9,
+      "resting_hr": 62.8,
+      "steps": 8821,
+      "temp_c": 36.6667,
+      "resp_rate": 14.6,
+      "eda": 2.01,
+      "fatigue": 1.87,
+      "stress": 2.07
+    },
+    {
+      "t": -16,
+      "sleep_h": 7.55,
+      "hrv_ms": 63.9,
+      "resting_hr": 62.3,
+      "steps": 8443,
+      "temp_c": 36.7,
+      "resp_rate": 15.1,
+      "eda": 2.27,
+      "fatigue": 2.21,
+      "stress": 2.11
+    },
+    {
+      "t": -15,
+      "sleep_h": 7.77,
+      "hrv_ms": 60.6,
+      "resting_hr": 62.0,
+      "steps": 8472,
+      "temp_c": 36.6778,
+      "resp_rate": 14.6,
+      "eda": 2.13,
+      "fatigue": 1.94,
+      "stress": 1.56
+    },
+    {
+      "t": -14,
+      "sleep_h": 7.4,
+      "hrv_ms": 62.4,
+      "resting_hr": 63.2,
+      "steps": 9349,
+      "temp_c": 36.8222,
+      "resp_rate": 15.1,
+      "eda": 1.8,
+      "fatigue": 1.47,
+      "stress": 2.08
+    },
+    {
+      "t": -13,
+      "sleep_h": 7.43,
+      "hrv_ms": 61.5,
+      "resting_hr": 62.0,
+      "steps": 8708,
+      "temp_c": 36.7444,
+      "resp_rate": 15.0,
+      "eda": 1.97,
+      "fatigue": 1.74,
+      "stress": 1.5
+    },
+    {
+      "t": -12,
+      "sleep_h": 7.3,
+      "hrv_ms": 61.9,
+      "resting_hr": 63.9,
+      "steps": 8789,
+      "temp_c": 36.7389,
+      "resp_rate": 14.9,
+      "eda": 1.76,
+      "fatigue": 2.04,
+      "stress": 1.78
+    },
+    {
+      "t": -11,
+      "sleep_h": 7.51,
+      "hrv_ms": 61.0,
+      "resting_hr": 63.2,
+      "steps": 8479,
+      "temp_c": 36.7333,
+      "resp_rate": 15.1,
+      "eda": 1.97,
+      "fatigue": 2.55,
+      "stress": 1.8
+    },
+    {
+      "t": -10,
+      "sleep_h": 7.08,
+      "hrv_ms": 59.9,
+      "resting_hr": 61.5,
+      "steps": 8367,
+      "temp_c": 36.7,
+      "resp_rate": 15.6,
+      "eda": 2.03,
+      "fatigue": 2.81,
+      "stress": 2.09
+    },
+    {
+      "t": -9,
+      "sleep_h": 7.03,
+      "hrv_ms": 59.1,
+      "resting_hr": 62.2,
+      "steps": 9082,
+      "temp_c": 36.7111,
+      "resp_rate": 15.6,
+      "eda": 2.39,
+      "fatigue": 2.81,
+      "stress": 2.04
+    },
+    {
+      "t": -8,
+      "sleep_h": 6.9,
+      "hrv_ms": 59.3,
+      "resting_hr": 62.4,
+      "steps": 8635,
+      "temp_c": 36.7611,
+      "resp_rate": 14.9,
+      "eda": 2.52,
+      "fatigue": 3.56,
+      "stress": 2.78
+    },
+    {
+      "t": -7,
+      "sleep_h": 6.47,
+      "hrv_ms": 55.4,
+      "resting_hr": 63.7,
+      "steps": 9172,
+      "temp_c": 36.7,
+      "resp_rate": 15.5,
+      "eda": 2.64,
+      "fatigue": 3.67,
+      "stress": 3.1
+    },
+    {
+      "t": -6,
+      "sleep_h": 6.11,
+      "hrv_ms": 52.9,
+      "resting_hr": 64.0,
+      "steps": 9025,
+      "temp_c": 36.6333,
+      "resp_rate": 15.4,
+      "eda": 3.3,
+      "fatigue": 3.88,
+      "stress": 4.1
+    },
+    {
+      "t": -5,
+      "sleep_h": 6.19,
+      "hrv_ms": 54.0,
+      "resting_hr": 65.1,
+      "steps": 7991,
+      "temp_c": 36.6833,
+      "resp_rate": 15.6,
+      "eda": 3.79,
+      "fatigue": 3.97,
+      "stress": 4.28
+    },
+    {
+      "t": -4,
+      "sleep_h": 5.96,
+      "hrv_ms": 53.8,
+      "resting_hr": 67.6,
+      "steps": 7394,
+      "temp_c": 36.6833,
+      "resp_rate": 15.1,
+      "eda": 3.98,
+      "fatigue": 4.6,
+      "stress": 5.06
+    },
+    {
+      "t": -3,
+      "sleep_h": 5.64,
+      "hrv_ms": 48.4,
+      "resting_hr": 65.3,
+      "steps": 7051,
+      "temp_c": 36.7167,
+      "resp_rate": 15.5,
+      "eda": 4.27,
+      "fatigue": 4.78,
+      "stress": 4.62
+    },
+    {
+      "t": -2,
+      "sleep_h": 5.35,
+      "hrv_ms": 50.2,
+      "resting_hr": 66.9,
+      "steps": 6221,
+      "temp_c": 36.9111,
+      "resp_rate": 16.6,
+      "eda": 4.57,
+      "fatigue": 4.99,
+      "stress": 5.7
+    },
+    {
+      "t": -1,
+      "sleep_h": 5.65,
+      "hrv_ms": 44.8,
+      "resting_hr": 68.6,
+      "steps": 6233,
+      "temp_c": 36.9111,
+      "resp_rate": 15.7,
+      "eda": 5.12,
+      "fatigue": 5.02,
+      "stress": 5.98
+    },
+    {
+      "t": 0,
+      "sleep_h": 5.17,
+      "hrv_ms": 44.7,
+      "resting_hr": 69.3,
+      "steps": 5591,
+      "temp_c": 37.0056,
+      "resp_rate": 15.9,
+      "eda": 5.57,
+      "fatigue": 5.65,
+      "stress": 6.5
+    }
+  ],
+  "events": [
+    {
+      "t": -11,
+      "label": "fatigue begins shifting"
+    }
+  ],
+  "change_point": {
+    "detected_t": -10,
+    "actual_t": null
+  },
+  "baseline": {
+    "sleep_h": {
+      "unit": "h",
+      "mean": 7.5486
+    },
+    "hrv_ms": {
+      "unit": "ms",
+      "mean": 61.9857
+    },
+    "resting_hr": {
+      "unit": "bpm",
+      "mean": 62.6357
+    },
+    "steps": {
+      "unit": "count",
+      "mean": 8818.7857
+    },
+    "temp_c": {
+      "unit": "degC",
+      "mean": 36.6889
+    },
+    "resp_rate": {
+      "unit": "brpm",
+      "mean": 14.95
+    },
+    "eda": {
+      "unit": "uS",
+      "mean": 1.9529
+    },
+    "fatigue": {
+      "unit": "score",
+      "mean": 1.9286
+    },
+    "stress": {
+      "unit": "score",
+      "mean": 2.0229
+    }
+  },
+  "temporal_trace": {
+    "earliest_coordinated_shift_t": -10,
+    "order": [
+      {
+        "signal": "fatigue",
+        "first_change_t": -11
+      },
+      {
+        "signal": "sleep_h",
+        "first_change_t": -10
+      },
+      {
+        "signal": "resp_rate",
+        "first_change_t": -10
+      },
+      {
+        "signal": "hrv_ms",
+        "first_change_t": -9
+      },
+      {
+        "signal": "eda",
+        "first_change_t": -9
+      },
+      {
+        "signal": "stress",
+        "first_change_t": -8
+      },
+      {
+        "signal": "resting_hr",
+        "first_change_t": -7
+      },
+      {
+        "signal": "steps",
+        "first_change_t": -5
+      },
+      {
+        "signal": "temp_c",
+        "first_change_t": -2
+      }
+    ]
+  },
+  "connections": {
+    "edges": [
+      {
+        "from": "fatigue",
+        "to": "sleep_h",
+        "relation": "precedes"
+      },
+      {
+        "from": "sleep_h",
+        "to": "resp_rate",
+        "relation": "precedes"
+      },
+      {
+        "from": "resp_rate",
+        "to": "hrv_ms",
+        "relation": "precedes"
+      },
+      {
+        "from": "hrv_ms",
+        "to": "eda",
+        "relation": "precedes"
+      },
+      {
+        "from": "eda",
+        "to": "stress",
+        "relation": "precedes"
+      },
+      {
+        "from": "stress",
+        "to": "resting_hr",
+        "relation": "precedes"
+      },
+      {
+        "from": "resting_hr",
+        "to": "steps",
+        "relation": "precedes"
+      },
+      {
+        "from": "steps",
+        "to": "temp_c",
+        "relation": "precedes"
+      }
+    ],
+    "hypothesis": "Earlier signal shifts preceded later ones in a coordinated temporal pattern (association, not causation)."
+  },
+  "missing_evidence": {
+    "items": [
+      {
+        "name": "hrv_ms",
+        "present": true
+      },
+      {
+        "name": "sleep_h",
+        "present": true
+      },
+      {
+        "name": "temp_c",
+        "present": true
+      },
+      {
+        "name": "subjective_stress_level",
+        "present": false
+      },
+      {
+        "name": "sleep_schedule_change",
+        "present": false
+      },
+      {
+        "name": "ferritin_or_iron_status",
+        "present": false
+      },
+      {
+        "name": "recent_illness",
+        "present": false
+      }
+    ],
+    "most_valuable_missing": [
+      "subjective_stress_level"
+    ]
+  },
+  "self_check": {
+    "pattern_evidence": "Strong",
+    "data_completeness": "High",
+    "interpretation_confidence": 67
+  },
+  "counterfactuals": {
+    "current_deviation": 18,
+    "signals": {
+      "stress": {
+        "new_deviation": 16,
+        "note": "If stress stayed near baseline"
+      },
+      "sleep_h": {
+        "new_deviation": 16,
+        "note": "If sleep_h stayed near baseline"
+      },
+      "eda": {
+        "new_deviation": 16,
+        "note": "If eda stayed near baseline"
+      },
+      "fatigue": {
+        "new_deviation": 17,
+        "note": "If fatigue stayed near baseline"
+      },
+      "hrv_ms": {
+        "new_deviation": 17,
+        "note": "If hrv_ms stayed near baseline"
+      },
+      "resting_hr": {
+        "new_deviation": 17,
+        "note": "If resting_hr stayed near baseline"
+      },
+      "steps": {
+        "new_deviation": 18,
+        "note": "If steps stayed near baseline"
+      },
+      "temp_c": {
+        "new_deviation": 18,
+        "note": "If temp_c stayed near baseline"
+      },
+      "resp_rate": {
+        "new_deviation": 18,
+        "note": "If resp_rate stayed near baseline"
+      }
+    }
+  },
+  "trajectories": [
+    {
+      "name": "Recovery toward baseline",
+      "assumption": "Signals gradually move toward the patient's personal baseline over the 7 simulated days.",
+      "points": [
+        16.0297,
+        14.5282,
+        13.0244,
+        11.5195,
+        10.0205,
+        8.5035,
+        7.0015
+      ]
+    },
+    {
+      "name": "Persistent deviation",
+      "assumption": "Signals remain near their current values with small deterministic variation and no strong directional trend.",
+      "points": [
+        17.472,
+        17.5606,
+        17.5877,
+        17.4641,
+        17.5562,
+        17.5356,
+        17.5763
+      ]
+    },
+    {
+      "name": "Continued divergence",
+      "assumption": "Signals extend their recent observed trend, dampened and clipped to avoid exaggerated change.",
+      "points": [
+        18.5383,
+        19.5788,
+        20.6048,
+        21.6478,
+        22.6841,
+        23.7393,
+        24.7245
+      ]
+    }
+  ],
+  "disclaimer": "Observed relationships are statistical associations and temporal patterns, not evidence of medical causation or diagnosis."
+}

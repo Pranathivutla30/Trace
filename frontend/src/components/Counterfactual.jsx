@@ -51,7 +51,8 @@ export default function Counterfactual({ counterfactuals, patientId, source }) {
   return (
     <Card id="whatif" className="span-4 half card-accent stretch" delay={0.1}>
       <span className="orb" aria-hidden="true" />
-      <CardHead title="What If?" eyebrow="Counterfactual · which signal matters most" />
+      <CardHead title="Counterfactual — What If?" eyebrow="See which signal moved the needle most" />
+      <p className="help-line">Tap a signal to imagine it had stayed normal, and see how much the overall change would shrink.</p>
 
       <div className="cf-ends">
         <div>
@@ -62,7 +63,7 @@ export default function Counterfactual({ counterfactuals, patientId, source }) {
           <Icon name="arrow" size={22} />
         </div>
         <div className="right">
-          <span>If normalized</span>
+          <span>If back to normal</span>
           <b>{result ? <AnimatedNumber key={`${active}-${result.to}`} from={result.from} to={result.to} /> : "—"}</b>
         </div>
       </div>
@@ -73,8 +74,8 @@ export default function Counterfactual({ counterfactuals, patientId, source }) {
         <motion.span className="cf-knob" animate={{ left: pos(target) }} transition={spring} />
       </div>
       <div className="cf-scale">
-        <span>0 · baseline</span>
-        <span>deviation</span>
+        <span>0 · normal</span>
+        <span>how far from normal</span>
         <span>100</span>
       </div>
 
@@ -85,7 +86,7 @@ export default function Counterfactual({ counterfactuals, patientId, source }) {
             className={`cf-pill ${active === key ? "active" : ""}`}
             onClick={() => onPick(key)}
           >
-            Normalize {signalMeta(key).label}
+            What if {signalMeta(key).label} stayed normal?
           </button>
         ))}
       </div>
@@ -96,7 +97,7 @@ export default function Counterfactual({ counterfactuals, patientId, source }) {
       <Sensitivity current={current} signals={counterfactuals.signals} active={active} />
 
 
-      <p className="caption">Simulation based on observed data.</p>
+      <p className="caption">A "what if" based on the data — not a prediction.</p>
     </Card>
   );
 }
@@ -115,7 +116,7 @@ function Sensitivity({ current, signals, active }) {
 
   return (
     <div className="sens">
-      <div className="sens-title">Sensitivity · points of deviation removed</div>
+      <div className="sens-title">How much each signal pulls the score down</div>
       {rows.map((r, i) => (
         <div className={`sens-row ${active === r.key ? "on" : ""}`} key={r.key}>
           <span className="sens-name">{signalMeta(r.key).label}</span>

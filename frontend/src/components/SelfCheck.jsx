@@ -18,7 +18,8 @@ export default function SelfCheck({ selfCheck }) {
 
   return (
     <Card id="selfcheck" className="span-4 stretch" delay={0.15}>
-      <CardHead title="Can TRACE Trust This?" eyebrow="Self-Check · internal reasoning check" />
+      <CardHead title="AI Self-Check — Can We Trust This?" eyebrow="How strong and consistent the evidence is" />
+      <p className="help-line">This is how sure TRACE is about its own reading of the data — <b>not</b> a chance that something is wrong with your health.</p>
 
       <div className="legend-dots">
         <span className="k"><span className="d" style={{ background: "var(--accent)" }} /> Confidence</span>
@@ -59,24 +60,47 @@ export default function SelfCheck({ selfCheck }) {
             <CountUp value={conf} />
             <small style={{ fontSize: 18, color: "var(--muted)" }}>%</small>
           </b>
-          <span className="gauge-label">confidence</span>
+          <span className="gauge-label">how sure TRACE is</span>
         </div>
       </div>
 
+      <ul className="sc-checks" aria-label="Reasoning checks">
+        {buildChecks(selfCheck).map((c) => (
+          <li className={`sc-check ${c.level}`} key={c.label}>
+            <span className="sc-dot" />
+            <span className="sc-check-label">{c.label}</span>
+            <b className="sc-check-val">{c.value}</b>
+          </li>
+        ))}
+      </ul>
+
       <div className="facts">
-        <div className="fact">
-          <span>Pattern evidence</span>
-          <b>{selfCheck.pattern_evidence ?? "--"}</b>
-        </div>
-        <div className="fact">
-          <span>Data completeness</span>
-          <b>{selfCheck.data_completeness ?? "--"}</b>
-        </div>
         <div className="fact wide">
-          <span>Basis</span>
-          <b>Deviation from personal baseline</b>
+          <span>Based on</span>
+          <b>How much things differ from this person's normal</b>
         </div>
       </div>
     </Card>
   );
+}
+
+// Build the reasoning checklist from the (real) available self-check fields.
+// Each check gets a level (ok / warn / low) that drives the dot color via CSS.
+// No invented numeric sub-scores — only what the backend actually provides.
+function buildChecks(sc) {
+  const conf = sc.interpretation_confidence;
+  const wordLevel = (w) => {
+    const s = String(w || "").toLowerCase();
+    if (["strong", "high", "very good", "good"].some((k) => s.includes(k))) return "ok";
+    if (["moderate", "fair"].some((k) => s.includes(k))) return "warn";
+    return "low";
+  };
+  const confLevel =
+    typeof conf !== "number" ? "low" : conf >= 70 ? "ok" : conf >= 40 ? "warn" : "low";
+
+  return [
+    { label: "How clear the pattern is", value: sc.pattern_evidence ?? "--", level: wordLevel(sc.pattern_evidence) },
+    { label: "How complete the data is", value: sc.data_completeness ?? "--", level: wordLevel(sc.data_completeness) },
+    { label: "Overall confidence", value: typeof conf === "number" ? `${Math.round(conf)}%` : "--", level: confLevel },
+  ];
 }

@@ -27,7 +27,7 @@ export default function Overview({ analysis, timeline, availableSignals, timeUni
   return (
     <>
       <Card id="overview" className="span-4 kpi-card kpi" delay={0}>
-        <div className="kpi-title">Deviation from baseline</div>
+        <div className="kpi-title">How far from normal</div>
         <div className="kpi-body">
           <span className="icon-circle">
             <Icon name="zap" size={20} />
@@ -36,14 +36,14 @@ export default function Overview({ analysis, timeline, availableSignals, timeUni
             <div className="kpi-value">
               <CountUp value={deviation} />
             </div>
-            <div className="kpi-note">composite score · 0–100</div>
+            <div className="kpi-note">0 = normal · higher = bigger change</div>
           </div>
           <MiniBars data={zs} />
         </div>
       </Card>
 
       <Card className="span-4 kpi-card kpi" delay={0.08}>
-        <div className="kpi-title">Interpretation confidence</div>
+        <div className="kpi-title">How sure is TRACE</div>
         <div className="kpi-body">
           <span className="icon-circle">
             <Icon name="shield" size={20} />
@@ -53,7 +53,7 @@ export default function Overview({ analysis, timeline, availableSignals, timeUni
               <CountUp value={conf} />
               <span className="kpi-unit">%</span>
             </div>
-            <div className="kpi-note">pattern {analysis?.self_check?.pattern_evidence?.toLowerCase() || "--"}</div>
+            <div className="kpi-note">how sure TRACE is · not a health risk</div>
           </div>
           <MiniRing value={conf} />
         </div>
@@ -87,7 +87,7 @@ function MiniBars({ data }) {
   return (
     <div className="kpi-viz" aria-hidden="true">
       {data.map((d, i) => (
-        <div className="mini-bar-col" key={d.key} title={`${signalMeta(d.key).label}: z ${d.z.toFixed(1)}`}>
+        <div className="mini-bar-col" key={d.key} title={`${signalMeta(d.key).label}: ${d.z >= 0 ? "higher" : "lower"} than usual`}>
           <motion.div
             className={`mini-bar ${d === hottest ? "hot" : ""}`}
             style={{ height: `${Math.max(10, (Math.abs(d.z) / max) * 46)}px` }}

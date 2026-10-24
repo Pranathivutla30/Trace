@@ -1,17 +1,28 @@
 // Small display helpers shared across sections (no data logic).
 
-// Time label for a timeline index, driven by the patient's time_unit.
+// Compact time label for chips/axes. Reads plainly for a non-expert:
+//   minute data -> "min 13"
+//   day data    -> "today", "10 days ago" (negatives), "in 3 days" (positive)
 export function fmtT(t, unit) {
   if (typeof t !== "number") return "--";
   if (unit === "minute") return `min ${t}`;
-  if (t === 0) return "Today";
-  return `Day ${t}`;
+  if (t === 0) return "today";
+  if (t < 0) return `${Math.abs(t)} ${Math.abs(t) === 1 ? "day" : "days"} ago`;
+  return `in ${t} ${t === 1 ? "day" : "days"}`;
 }
 
-export function windowLabel(patient) {
+// Human session-length label. For minute/day data the length is derived from
+// the actual timeline (pointCount) rather than a hardcoded value; falls back
+// to the patient's own window string when no timeline is available.
+export function windowLabel(patient, timeline) {
   if (!patient) return "";
-  if (patient.time_unit === "minute") return "40-Minute Session";
-  if (patient.time_unit === "day") return "30-Day Investigation";
+  const n = Array.isArray(timeline) ? timeline.length : null;
+  if (patient.time_unit === "minute") {
+    return n ? `${n}-Minute Session` : patient.window || "Session";
+  }
+  if (patient.time_unit === "day") {
+    return n ? `${n}-Day Investigation` : "30-Day Investigation";
+  }
   return patient.window || "";
 }
 
@@ -46,4 +57,21 @@ export function decimalsFor(v) {
   if (typeof v !== "number" || Math.abs(v) >= 100 || Number.isInteger(v)) return 0;
   const s = String(v).split(".")[1] || "";
   return Math.min(2, s.length);
+}
+
+// Display-only: turn a raw variable/label string into human-readable text.
+// Known signal keys are left to signalMeta elsewhere; this handles the
+// contextual variable names used by BioMissing (e.g. "subjective_stress_level"
+// -> "Subjective stress level"). Strings that already contain spaces (already
+// human-readable, e.g. "Subjective context label") are returned unchanged.
+export function humanizeLabel(name) {
+  if (typeof name !== "string" || !name) return name;
+  if (name.includes(" ")) return name; // already human-readable
+  const words = name.split("_").filter(Boolean);
+  if (!words.length) return name;
+  return words
+    .map((w, i) =>
+      i === 0 ? w.charAt(0).toUpperCase() + w.slice(1) : w.toLowerCase()
+    )
+    .join(" ");
 }
