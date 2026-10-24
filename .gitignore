@@ -18,8 +18,5 @@ node_modules/
 .vscode/
 .idea/
 
-# KiroCrew local agent settings
-.kiro/
-
 # Build output
 dist/
