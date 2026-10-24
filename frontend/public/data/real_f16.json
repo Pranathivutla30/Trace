@@ -1,0 +1,681 @@
+{
+  "id": "f16",
+  "source": "real",
+  "time_unit": "minute",
+  "window": "0 to 54 min",
+  "available_signals": [
+    "hr_bpm",
+    "hrv_ms",
+    "eda_us",
+    "temp_c",
+    "activity"
+  ],
+  "data_source_label": "De-identified wearable research data \u2014 PhysioNet Wearable Device Dataset from Induced Stress and Structured Exercise Sessions v1.0.1 (STRESS), participant f16.",
+  "is_real_patient_data": true,
+  "timeline": [
+    {
+      "t": 0.0,
+      "hr_bpm": 84.2486,
+      "eda_us": 0.080221,
+      "temp_c": 33.7043,
+      "activity": 63.6344,
+      "ml_anomaly_score": null,
+      "raw_model_score": null
+    },
+    {
+      "t": 1.0,
+      "hr_bpm": 89.8252,
+      "eda_us": 0.092945,
+      "temp_c": 33.4488,
+      "activity": 65.0178,
+      "ml_anomaly_score": null,
+      "raw_model_score": null
+    },
+    {
+      "t": 2.0,
+      "hr_bpm": 87.12,
+      "eda_us": 0.10785,
+      "temp_c": 33.4123,
+      "activity": 64.2658,
+      "ml_anomaly_score": null,
+      "raw_model_score": null
+    },
+    {
+      "t": 3.0,
+      "hr_bpm": 78.3233,
+      "eda_us": 0.102432,
+      "temp_c": 33.3653,
+      "activity": 64.7193,
+      "ml_anomaly_score": null,
+      "raw_model_score": null
+    },
+    {
+      "t": 4.0,
+      "hr_bpm": 84.3528,
+      "hrv_ms": 24.7053,
+      "eda_us": 0.103659,
+      "temp_c": 33.3143,
+      "activity": 64.4825,
+      "ml_anomaly_score": 0.2912,
+      "raw_model_score": 0.479975
+    },
+    {
+      "t": 5.0,
+      "hr_bpm": 78.6618,
+      "hrv_ms": 80.9049,
+      "eda_us": 0.10921,
+      "temp_c": 33.278,
+      "activity": 63.7713,
+      "ml_anomaly_score": 0.0,
+      "raw_model_score": 0.387248
+    },
+    {
+      "t": 6.0,
+      "hr_bpm": 78.6262,
+      "hrv_ms": 104.4268,
+      "eda_us": 0.099233,
+      "temp_c": 33.2423,
+      "activity": 63.1535,
+      "ml_anomaly_score": 0.3257,
+      "raw_model_score": 0.490957
+    },
+    {
+      "t": 7.0,
+      "hr_bpm": 71.5867,
+      "hrv_ms": 92.3879,
+      "eda_us": 0.102128,
+      "temp_c": 33.2182,
+      "activity": 63.898,
+      "ml_anomaly_score": 0.1089,
+      "raw_model_score": 0.421914
+    },
+    {
+      "t": 8.0,
+      "hr_bpm": 73.7788,
+      "hrv_ms": 90.8506,
+      "eda_us": 0.106133,
+      "temp_c": 33.3135,
+      "activity": 63.7008,
+      "ml_anomaly_score": 0.0351,
+      "raw_model_score": 0.398423
+    },
+    {
+      "t": 9.0,
+      "hr_bpm": 71.2648,
+      "hrv_ms": 63.9732,
+      "eda_us": 0.106501,
+      "temp_c": 33.2803,
+      "activity": 63.6416,
+      "ml_anomaly_score": 0.082,
+      "raw_model_score": 0.413365
+    },
+    {
+      "t": 10.0,
+      "hr_bpm": 70.6815,
+      "hrv_ms": 66.4139,
+      "eda_us": 0.107141,
+      "temp_c": 33.1187,
+      "activity": 64.0123,
+      "ml_anomaly_score": 0.1747,
+      "raw_model_score": 0.442877
+    },
+    {
+      "t": 11.0,
+      "hr_bpm": 73.7212,
+      "hrv_ms": 85.2901,
+      "eda_us": 0.113967,
+      "temp_c": 32.9783,
+      "activity": 63.6429,
+      "ml_anomaly_score": 0.4547,
+      "raw_model_score": 0.532036
+    },
+    {
+      "t": 12.0,
+      "hr_bpm": 67.9617,
+      "hrv_ms": 77.6386,
+      "eda_us": 0.114457,
+      "temp_c": 32.9025,
+      "activity": 63.5732,
+      "ml_anomaly_score": 0.5573,
+      "raw_model_score": 0.564718
+    },
+    {
+      "t": 13.0,
+      "hr_bpm": 69.6182,
+      "hrv_ms": 89.0541,
+      "eda_us": 0.116095,
+      "temp_c": 32.8773,
+      "activity": 63.7315,
+      "ml_anomaly_score": 0.5509,
+      "raw_model_score": 0.562697
+    },
+    {
+      "t": 14.0,
+      "hr_bpm": 72.0267,
+      "hrv_ms": 96.9336,
+      "eda_us": 0.117316,
+      "temp_c": 32.8385,
+      "activity": 64.0551,
+      "ml_anomaly_score": 0.5573,
+      "raw_model_score": 0.564722
+    },
+    {
+      "t": 15.0,
+      "hr_bpm": 71.02,
+      "hrv_ms": 80.1921,
+      "eda_us": 0.121619,
+      "temp_c": 32.8883,
+      "activity": 63.7492,
+      "ml_anomaly_score": 0.683,
+      "raw_model_score": 0.604766
+    },
+    {
+      "t": 16.0,
+      "hr_bpm": 71.702,
+      "hrv_ms": 85.5816,
+      "eda_us": 0.125102,
+      "temp_c": 32.9755,
+      "activity": 63.7562,
+      "ml_anomaly_score": 0.7068,
+      "raw_model_score": 0.612341
+    },
+    {
+      "t": 17.0,
+      "hr_bpm": 78.4503,
+      "hrv_ms": 51.6584,
+      "eda_us": 0.191425,
+      "temp_c": 33.0173,
+      "activity": 63.5354,
+      "ml_anomaly_score": 0.5882,
+      "raw_model_score": 0.574566
+    },
+    {
+      "t": 18.0,
+      "hr_bpm": 78.2145,
+      "hrv_ms": 71.2684,
+      "eda_us": 0.962467,
+      "temp_c": 33.0595,
+      "activity": 63.6598,
+      "ml_anomaly_score": 0.535,
+      "raw_model_score": 0.557629
+    },
+    {
+      "t": 19.0,
+      "hr_bpm": 73.0372,
+      "hrv_ms": 85.7357,
+      "eda_us": 2.277498,
+      "temp_c": 33.0613,
+      "activity": 63.6649,
+      "ml_anomaly_score": 0.5685,
+      "raw_model_score": 0.568304
+    },
+    {
+      "t": 20.0,
+      "hr_bpm": 70.3752,
+      "hrv_ms": 121.534,
+      "eda_us": 2.118004,
+      "temp_c": 32.9902,
+      "activity": 63.6228,
+      "ml_anomaly_score": 0.7984,
+      "raw_model_score": 0.641504
+    },
+    {
+      "t": 21.0,
+      "hr_bpm": 67.701,
+      "hrv_ms": 104.8157,
+      "eda_us": 1.965251,
+      "temp_c": 32.8745,
+      "activity": 63.3501,
+      "ml_anomaly_score": 0.7948,
+      "raw_model_score": 0.640346
+    },
+    {
+      "t": 22.0,
+      "hr_bpm": 70.6192,
+      "hrv_ms": 82.8436,
+      "eda_us": 1.183769,
+      "temp_c": 32.7973,
+      "activity": 63.0925,
+      "ml_anomaly_score": 0.8044,
+      "raw_model_score": 0.643398
+    },
+    {
+      "t": 23.0,
+      "hr_bpm": 77.8638,
+      "hrv_ms": 103.5267,
+      "eda_us": 0.686408,
+      "temp_c": 32.7183,
+      "activity": 62.9209,
+      "ml_anomaly_score": 0.8441,
+      "raw_model_score": 0.656051
+    },
+    {
+      "t": 24.0,
+      "hr_bpm": 83.0472,
+      "hrv_ms": 53.3314,
+      "eda_us": 0.474993,
+      "temp_c": 32.6382,
+      "activity": 62.5752,
+      "ml_anomaly_score": 0.8239,
+      "raw_model_score": 0.649626
+    },
+    {
+      "t": 25.0,
+      "hr_bpm": 76.021,
+      "hrv_ms": 71.9951,
+      "eda_us": 0.328899,
+      "temp_c": 32.607,
+      "activity": 62.873,
+      "ml_anomaly_score": 0.8051,
+      "raw_model_score": 0.643626
+    },
+    {
+      "t": 26.0,
+      "hr_bpm": 69.0527,
+      "hrv_ms": 112.1849,
+      "eda_us": 0.235047,
+      "temp_c": 32.558,
+      "activity": 62.9122,
+      "ml_anomaly_score": 0.8232,
+      "raw_model_score": 0.649383
+    },
+    {
+      "t": 27.0,
+      "hr_bpm": 71.312,
+      "hrv_ms": 100.2773,
+      "eda_us": 0.211373,
+      "temp_c": 32.429,
+      "activity": 63.3087,
+      "ml_anomaly_score": 0.7618,
+      "raw_model_score": 0.629858
+    },
+    {
+      "t": 28.0,
+      "hr_bpm": 74.2708,
+      "hrv_ms": 140.8418,
+      "eda_us": 0.306155,
+      "temp_c": 32.3993,
+      "activity": 63.6514,
+      "ml_anomaly_score": 0.8406,
+      "raw_model_score": 0.654928
+    },
+    {
+      "t": 29.0,
+      "hr_bpm": 62.5237,
+      "hrv_ms": 146.8528,
+      "eda_us": 0.291911,
+      "temp_c": 32.42,
+      "activity": 63.7268,
+      "ml_anomaly_score": 1.0,
+      "raw_model_score": 0.705701
+    },
+    {
+      "t": 30.0,
+      "hr_bpm": 65.6908,
+      "hrv_ms": 110.7863,
+      "eda_us": 0.270249,
+      "temp_c": 32.4992,
+      "activity": 63.2312,
+      "ml_anomaly_score": 0.9059,
+      "raw_model_score": 0.675748
+    },
+    {
+      "t": 31.0,
+      "hr_bpm": 69.9473,
+      "hrv_ms": 209.2428,
+      "eda_us": 0.261695,
+      "temp_c": 32.475,
+      "activity": 62.6746,
+      "ml_anomaly_score": 0.9222,
+      "raw_model_score": 0.68092
+    },
+    {
+      "t": 32.0,
+      "hr_bpm": 72.3282,
+      "hrv_ms": 83.3389,
+      "eda_us": 0.272398,
+      "temp_c": 32.4487,
+      "activity": 63.4003,
+      "ml_anomaly_score": 0.7184,
+      "raw_model_score": 0.616021
+    },
+    {
+      "t": 33.0,
+      "hr_bpm": 69.7228,
+      "hrv_ms": 116.6946,
+      "eda_us": 0.270356,
+      "temp_c": 32.4615,
+      "activity": 62.7291,
+      "ml_anomaly_score": 0.8481,
+      "raw_model_score": 0.65734
+    },
+    {
+      "t": 34.0,
+      "hr_bpm": 65.1632,
+      "hrv_ms": 96.9506,
+      "eda_us": 0.263509,
+      "temp_c": 32.452,
+      "activity": 62.5695,
+      "ml_anomaly_score": 0.9516,
+      "raw_model_score": 0.690295
+    },
+    {
+      "t": 35.0,
+      "hr_bpm": 77.4233,
+      "hrv_ms": 78.1994,
+      "eda_us": 0.291762,
+      "temp_c": 32.4848,
+      "activity": 64.0675,
+      "ml_anomaly_score": 0.6092,
+      "raw_model_score": 0.581245
+    },
+    {
+      "t": 36.0,
+      "hr_bpm": 82.6475,
+      "hrv_ms": 55.2783,
+      "eda_us": 1.140374,
+      "temp_c": 32.5642,
+      "activity": 63.5473,
+      "ml_anomaly_score": 0.6364,
+      "raw_model_score": 0.589917
+    },
+    {
+      "t": 37.0,
+      "hr_bpm": 74.4395,
+      "hrv_ms": 110.7254,
+      "eda_us": 2.803142,
+      "temp_c": 32.6617,
+      "activity": 63.6399,
+      "ml_anomaly_score": 0.7348,
+      "raw_model_score": 0.621241
+    },
+    {
+      "t": 38.0,
+      "hr_bpm": 68.6838,
+      "hrv_ms": 93.5818,
+      "eda_us": 1.70351,
+      "temp_c": 32.7687,
+      "activity": 63.8154,
+      "ml_anomaly_score": 0.7137,
+      "raw_model_score": 0.61452
+    },
+    {
+      "t": 39.0,
+      "hr_bpm": 69.639,
+      "hrv_ms": 89.3043,
+      "eda_us": 0.859169,
+      "temp_c": 32.8547,
+      "activity": 63.768,
+      "ml_anomaly_score": 0.7081,
+      "raw_model_score": 0.612738
+    },
+    {
+      "t": 40.0,
+      "hr_bpm": 69.7825,
+      "hrv_ms": 89.585,
+      "eda_us": 0.530304,
+      "temp_c": 32.9217,
+      "activity": 63.6907,
+      "ml_anomaly_score": 0.7213,
+      "raw_model_score": 0.61695
+    },
+    {
+      "t": 41.0,
+      "hr_bpm": 73.4645,
+      "hrv_ms": 72.4348,
+      "eda_us": 0.37346,
+      "temp_c": 32.967,
+      "activity": 63.6771,
+      "ml_anomaly_score": 0.6743,
+      "raw_model_score": 0.60197
+    },
+    {
+      "t": 42.0,
+      "hr_bpm": 69.7493,
+      "hrv_ms": 106.1465,
+      "eda_us": 0.290311,
+      "temp_c": 33.0395,
+      "activity": 63.7692,
+      "ml_anomaly_score": 0.6504,
+      "raw_model_score": 0.594364
+    },
+    {
+      "t": 43.0,
+      "hr_bpm": 67.0077,
+      "hrv_ms": 87.2965,
+      "eda_us": 0.19455,
+      "temp_c": 33.0763,
+      "activity": 63.5135,
+      "ml_anomaly_score": 0.6315,
+      "raw_model_score": 0.588361
+    },
+    {
+      "t": 44.0,
+      "hr_bpm": 65.7605,
+      "hrv_ms": 113.2629,
+      "eda_us": 0.163903,
+      "temp_c": 33.126,
+      "activity": 63.5437,
+      "ml_anomaly_score": 0.7177,
+      "raw_model_score": 0.615788
+    },
+    {
+      "t": 45.0,
+      "hr_bpm": 69.0523,
+      "hrv_ms": 110.0344,
+      "eda_us": 0.129074,
+      "temp_c": 33.1208,
+      "activity": 63.6235,
+      "ml_anomaly_score": 0.5788,
+      "raw_model_score": 0.571557
+    },
+    {
+      "t": 46.0,
+      "hr_bpm": 69.0275,
+      "hrv_ms": 96.5491,
+      "eda_us": 0.113305,
+      "temp_c": 33.1332,
+      "activity": 63.6726,
+      "ml_anomaly_score": 0.3003,
+      "raw_model_score": 0.482887
+    },
+    {
+      "t": 47.0,
+      "hr_bpm": 71.1818,
+      "hrv_ms": 140.0298,
+      "eda_us": 0.102187,
+      "temp_c": 33.1587,
+      "activity": 63.6673,
+      "ml_anomaly_score": 0.4761,
+      "raw_model_score": 0.538852
+    },
+    {
+      "t": 48.0,
+      "hr_bpm": 74.2127,
+      "hrv_ms": 57.7632,
+      "eda_us": 0.10264,
+      "temp_c": 33.263,
+      "activity": 63.7048,
+      "ml_anomaly_score": 0.0277,
+      "raw_model_score": 0.396076
+    },
+    {
+      "t": 49.0,
+      "hr_bpm": 69.794,
+      "hrv_ms": 111.6286,
+      "eda_us": 0.256208,
+      "temp_c": 33.328,
+      "activity": 63.8672,
+      "ml_anomaly_score": 0.5458,
+      "raw_model_score": 0.561056
+    },
+    {
+      "t": 50.0,
+      "hr_bpm": 69.1448,
+      "hrv_ms": 108.0839,
+      "eda_us": 0.569018,
+      "temp_c": 33.3462,
+      "activity": 63.4797,
+      "ml_anomaly_score": 0.5578,
+      "raw_model_score": 0.564888
+    },
+    {
+      "t": 51.0,
+      "hr_bpm": 62.7298,
+      "hrv_ms": 93.1471,
+      "eda_us": 0.52923,
+      "temp_c": 33.2903,
+      "activity": 63.6828,
+      "ml_anomaly_score": 0.7474,
+      "raw_model_score": 0.62526
+    },
+    {
+      "t": 52.0,
+      "hr_bpm": 66.7198,
+      "hrv_ms": 88.0424,
+      "eda_us": 0.460112,
+      "temp_c": 33.3185,
+      "activity": 64.0866,
+      "ml_anomaly_score": 0.5442,
+      "raw_model_score": 0.560538
+    },
+    {
+      "t": 53.0,
+      "hr_bpm": 74.3957,
+      "hrv_ms": 65.9836,
+      "eda_us": 0.590105,
+      "temp_c": 33.3429,
+      "activity": 63.7265,
+      "ml_anomaly_score": 0.3634,
+      "raw_model_score": 0.502975
+    },
+    {
+      "t": 54.0,
+      "hr_bpm": 76.38,
+      "activity": 64.0703,
+      "ml_anomaly_score": null,
+      "raw_model_score": null
+    }
+  ],
+  "events": [
+    {
+      "t": 14.35,
+      "label": "event_1"
+    },
+    {
+      "t": 15.7,
+      "label": "event_2"
+    },
+    {
+      "t": 19.7667,
+      "label": "event_3"
+    },
+    {
+      "t": 35.35,
+      "label": "event_4"
+    },
+    {
+      "t": 36.0833,
+      "label": "event_5"
+    },
+    {
+      "t": 36.4833,
+      "label": "event_6"
+    },
+    {
+      "t": 36.9833,
+      "label": "event_7"
+    },
+    {
+      "t": 47.9,
+      "label": "event_8"
+    },
+    {
+      "t": 48.5,
+      "label": "event_9"
+    }
+  ],
+  "change_point": {
+    "detected_t": 13.0,
+    "actual_t": null
+  },
+  "baseline": {
+    "hr_bpm": {
+      "unit": "bpm",
+      "mean": 78.9518
+    },
+    "hrv_ms": {
+      "unit": "ms",
+      "mean": 74.8089
+    },
+    "eda_us": {
+      "unit": "uS",
+      "mean": 0.1016
+    },
+    "temp_c": {
+      "unit": "degC",
+      "mean": 33.336
+    },
+    "activity": {
+      "unit": "g",
+      "mean": 64.027
+    }
+  },
+  "temporal_trace": {
+    "earliest_coordinated_shift_t": 13.0,
+    "order": [
+      {
+        "signal": "temp_c",
+        "first_change_t": 13.0
+      }
+    ]
+  },
+  "connections": {
+    "edges": [],
+    "hypothesis": "Associations observed over the change period (not causation). Real wearable signals here are only loosely coupled."
+  },
+  "missing_evidence": {
+    "items": [
+      {
+        "name": "hr_bpm",
+        "present": true
+      },
+      {
+        "name": "hrv_ms",
+        "present": true
+      },
+      {
+        "name": "eda_us",
+        "present": true
+      },
+      {
+        "name": "temp_c",
+        "present": true
+      },
+      {
+        "name": "activity",
+        "present": true
+      }
+    ],
+    "most_valuable_missing": [
+      "Subjective context label"
+    ]
+  },
+  "self_check": {
+    "pattern_evidence": "Strong",
+    "data_completeness": "High",
+    "interpretation_confidence": 70
+  },
+  "ml_transition_model": {
+    "model_type": "IsolationForest",
+    "training_participant_count": 35,
+    "held_out_participant": "f16",
+    "baseline_mean_anomaly": 0.1454,
+    "post_baseline_mean_anomaly": 0.6694,
+    "peak_anomaly_window": 29,
+    "peak_anomaly_score": 1.0,
+    "persistent_anomaly_detected": true,
+    "note": "Anomaly scores measure deviation from a learned baseline-like pattern. They are NOT disease probabilities, stress probabilities, or clinical risk scores."
+  },
+  "disclaimer": "This analysis uses de-identified wearable measurements from a research dataset for exploratory temporal analysis. TRACE does not diagnose disease, determine stress severity, predict clinical outcomes, or provide medical advice."
+}
