@@ -1,0 +1,451 @@
+{
+  "id": "S01",
+  "source": "real",
+  "time_unit": "minute",
+  "window": "0 to 40 min",
+  "available_signals": [
+    "hr_bpm",
+    "eda_us",
+    "temp_c",
+    "resp_rate"
+  ],
+  "data_status": "mock",
+  "timeline": [
+    {
+      "t": 0,
+      "hr_bpm": 72.0,
+      "eda_us": 2.1,
+      "temp_c": 33.0,
+      "resp_rate": 15.0
+    },
+    {
+      "t": 1,
+      "hr_bpm": 72.0,
+      "eda_us": 2.1,
+      "temp_c": 33.0,
+      "resp_rate": 15.0
+    },
+    {
+      "t": 2,
+      "hr_bpm": 72.0,
+      "eda_us": 2.1,
+      "temp_c": 33.0,
+      "resp_rate": 15.0
+    },
+    {
+      "t": 3,
+      "hr_bpm": 72.0,
+      "eda_us": 2.1,
+      "temp_c": 33.0,
+      "resp_rate": 15.0
+    },
+    {
+      "t": 4,
+      "hr_bpm": 72.4,
+      "eda_us": 2.27,
+      "temp_c": 33.01,
+      "resp_rate": 15.1
+    },
+    {
+      "t": 5,
+      "hr_bpm": 73.7,
+      "eda_us": 2.74,
+      "temp_c": 33.02,
+      "resp_rate": 15.3
+    },
+    {
+      "t": 6,
+      "hr_bpm": 75.5,
+      "eda_us": 3.45,
+      "temp_c": 33.05,
+      "resp_rate": 15.7
+    },
+    {
+      "t": 7,
+      "hr_bpm": 78.0,
+      "eda_us": 4.32,
+      "temp_c": 33.08,
+      "resp_rate": 16.1
+    },
+    {
+      "t": 8,
+      "hr_bpm": 80.8,
+      "eda_us": 5.3,
+      "temp_c": 33.12,
+      "resp_rate": 16.6
+    },
+    {
+      "t": 9,
+      "hr_bpm": 84.0,
+      "eda_us": 6.3,
+      "temp_c": 33.16,
+      "resp_rate": 17.2
+    },
+    {
+      "t": 10,
+      "hr_bpm": 87.3,
+      "eda_us": 7.28,
+      "temp_c": 33.22,
+      "resp_rate": 17.8
+    },
+    {
+      "t": 11,
+      "hr_bpm": 90.7,
+      "eda_us": 8.15,
+      "temp_c": 33.27,
+      "resp_rate": 18.4
+    },
+    {
+      "t": 12,
+      "hr_bpm": 94.0,
+      "eda_us": 8.86,
+      "temp_c": 33.33,
+      "resp_rate": 18.9
+    },
+    {
+      "t": 13,
+      "hr_bpm": 97.2,
+      "eda_us": 9.33,
+      "temp_c": 33.39,
+      "resp_rate": 19.3
+    },
+    {
+      "t": 14,
+      "hr_bpm": 100.0,
+      "eda_us": 9.5,
+      "temp_c": 33.45,
+      "resp_rate": 19.7
+    },
+    {
+      "t": 15,
+      "hr_bpm": 102.5,
+      "eda_us": 9.5,
+      "temp_c": 33.51,
+      "resp_rate": 19.9
+    },
+    {
+      "t": 16,
+      "hr_bpm": 104.3,
+      "eda_us": 9.5,
+      "temp_c": 33.57,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 17,
+      "hr_bpm": 105.6,
+      "eda_us": 9.5,
+      "temp_c": 33.63,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 18,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.68,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 19,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.74,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 20,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.78,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 21,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.82,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 22,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.85,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 23,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.88,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 24,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.89,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 25,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 26,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 27,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 28,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 29,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 30,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 31,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 32,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 33,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 34,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 35,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 36,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 37,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 38,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 39,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    },
+    {
+      "t": 40,
+      "hr_bpm": 106.0,
+      "eda_us": 9.5,
+      "temp_c": 33.9,
+      "resp_rate": 20.0
+    }
+  ],
+  "events": [
+    {
+      "t": 3,
+      "label": "Stress start (actual)"
+    }
+  ],
+  "change_point": {
+    "detected_t": 4,
+    "actual_t": 3
+  },
+  "baseline": {
+    "hr_bpm": {
+      "unit": "bpm",
+      "mean": 72.0
+    },
+    "eda_us": {
+      "unit": "uS",
+      "mean": 2.1
+    },
+    "temp_c": {
+      "unit": "degC",
+      "mean": 33.0
+    },
+    "resp_rate": {
+      "unit": "brpm",
+      "mean": 15.0
+    }
+  },
+  "temporal_trace": {
+    "earliest_coordinated_shift_t": 4,
+    "order": [
+      {
+        "signal": "eda_us",
+        "first_change_t": 4
+      },
+      {
+        "signal": "hr_bpm",
+        "first_change_t": 4
+      },
+      {
+        "signal": "resp_rate",
+        "first_change_t": 5
+      }
+    ]
+  },
+  "connections": {
+    "edges": [
+      {
+        "from": "eda_us",
+        "to": "hr_bpm",
+        "relation": "co-moves"
+      },
+      {
+        "from": "hr_bpm",
+        "to": "resp_rate",
+        "relation": "precedes"
+      }
+    ],
+    "hypothesis": "A sympathetic stress response: EDA and HR rose together shortly after onset, followed by respiration."
+  },
+  "missing_evidence": {
+    "items": [
+      {
+        "name": "HR",
+        "present": true
+      },
+      {
+        "name": "EDA",
+        "present": true
+      },
+      {
+        "name": "Skin temperature",
+        "present": true
+      },
+      {
+        "name": "Respiration",
+        "present": true
+      },
+      {
+        "name": "HRV",
+        "present": false
+      },
+      {
+        "name": "Sleep",
+        "present": false
+      },
+      {
+        "name": "Subjective stress label",
+        "present": false
+      }
+    ],
+    "most_valuable_missing": [
+      "HRV",
+      "Subjective stress label"
+    ]
+  },
+  "self_check": {
+    "pattern_evidence": "Strong",
+    "data_completeness": "Moderate",
+    "interpretation_confidence": 74
+  },
+  "counterfactuals": {
+    "current_deviation": 81,
+    "signals": {
+      "eda_us": {
+        "new_deviation": 48,
+        "note": "If EDA stayed near baseline"
+      },
+      "hr_bpm": {
+        "new_deviation": 59,
+        "note": "If HR stayed near baseline"
+      }
+    }
+  },
+  "trajectories": [
+    {
+      "name": "Scenario A",
+      "assumption": "Recovery to baseline",
+      "points": [
+        81,
+        66,
+        50,
+        34,
+        20
+      ]
+    },
+    {
+      "name": "Scenario B",
+      "assumption": "Sustained arousal",
+      "points": [
+        81,
+        80,
+        82,
+        79,
+        81
+      ]
+    },
+    {
+      "name": "Scenario C",
+      "assumption": "Escalating stress",
+      "points": [
+        81,
+        87,
+        92,
+        96,
+        99
+      ]
+    }
+  ]
+}

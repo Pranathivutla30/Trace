@@ -1,0 +1,574 @@
+{
+  "id": "001",
+  "source": "synthetic",
+  "time_unit": "day",
+  "window": "Day -30 to Day 0",
+  "available_signals": [
+    "sleep_h",
+    "hrv_ms",
+    "resting_hr",
+    "steps",
+    "temp_c",
+    "fatigue",
+    "stress",
+    "resp_rate",
+    "spo2"
+  ],
+  "data_status": "mock",
+  "timeline": [
+    {
+      "t": -30,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -29,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -28,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -27,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -26,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -25,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -24,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -23,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -22,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -21,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -20,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -19,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -18,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -17,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -16,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -15,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -14,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -13,
+      "sleep_h": 7.6,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -12,
+      "sleep_h": 7.54,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -11,
+      "sleep_h": 7.36,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -10,
+      "sleep_h": 7.1,
+      "hrv_ms": 64.0,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -9,
+      "sleep_h": 6.79,
+      "hrv_ms": 62.4,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -8,
+      "sleep_h": 6.45,
+      "hrv_ms": 58.6,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.0,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -7,
+      "sleep_h": 6.11,
+      "hrv_ms": 53.5,
+      "resting_hr": 56.0,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.2,
+      "stress": 2.5,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -6,
+      "sleep_h": 5.8,
+      "hrv_ms": 48.4,
+      "resting_hr": 56.8,
+      "steps": 9200.0,
+      "temp_c": 36.5,
+      "fatigue": 2.9,
+      "stress": 2.8,
+      "resp_rate": 14.5,
+      "spo2": 98.0
+    },
+    {
+      "t": -5,
+      "sleep_h": 5.54,
+      "hrv_ms": 44.6,
+      "resting_hr": 58.9,
+      "steps": 9200.0,
+      "temp_c": 36.54,
+      "fatigue": 3.7,
+      "stress": 3.5,
+      "resp_rate": 14.7,
+      "spo2": 98.0
+    },
+    {
+      "t": -4,
+      "sleep_h": 5.36,
+      "hrv_ms": 43.0,
+      "resting_hr": 61.5,
+      "steps": 8659.0,
+      "temp_c": 36.66,
+      "fatigue": 4.8,
+      "stress": 4.5,
+      "resp_rate": 15.1,
+      "spo2": 97.8
+    },
+    {
+      "t": -3,
+      "sleep_h": 5.3,
+      "hrv_ms": 43.0,
+      "resting_hr": 64.1,
+      "steps": 7370.0,
+      "temp_c": 36.8,
+      "fatigue": 5.8,
+      "stress": 5.5,
+      "resp_rate": 15.8,
+      "spo2": 97.5
+    },
+    {
+      "t": -2,
+      "sleep_h": 5.3,
+      "hrv_ms": 43.0,
+      "resting_hr": 66.2,
+      "steps": 5830.0,
+      "temp_c": 36.94,
+      "fatigue": 6.6,
+      "stress": 6.5,
+      "resp_rate": 16.4,
+      "spo2": 97.0
+    },
+    {
+      "t": -1,
+      "sleep_h": 5.3,
+      "hrv_ms": 43.0,
+      "resting_hr": 67.0,
+      "steps": 4541.0,
+      "temp_c": 37.06,
+      "fatigue": 7.3,
+      "stress": 7.2,
+      "resp_rate": 16.8,
+      "spo2": 96.7
+    },
+    {
+      "t": 0,
+      "sleep_h": 5.3,
+      "hrv_ms": 43.0,
+      "resting_hr": 67.0,
+      "steps": 4000.0,
+      "temp_c": 37.1,
+      "fatigue": 7.5,
+      "stress": 7.5,
+      "resp_rate": 17.0,
+      "spo2": 96.5
+    }
+  ],
+  "events": [
+    {
+      "t": -13,
+      "label": "Sleep begins dropping"
+    }
+  ],
+  "change_point": {
+    "detected_t": -12,
+    "actual_t": -13
+  },
+  "baseline": {
+    "sleep_h": {
+      "unit": "h",
+      "mean": 7.6
+    },
+    "hrv_ms": {
+      "unit": "ms",
+      "mean": 64.0
+    },
+    "resting_hr": {
+      "unit": "bpm",
+      "mean": 56.0
+    },
+    "steps": {
+      "unit": "count",
+      "mean": 9200.0
+    },
+    "temp_c": {
+      "unit": "degC",
+      "mean": 36.5
+    },
+    "fatigue": {
+      "unit": "score",
+      "mean": 2.0
+    },
+    "stress": {
+      "unit": "score",
+      "mean": 2.5
+    },
+    "resp_rate": {
+      "unit": "brpm",
+      "mean": 14.5
+    },
+    "spo2": {
+      "unit": "pct",
+      "mean": 98.0
+    }
+  },
+  "temporal_trace": {
+    "earliest_coordinated_shift_t": -13,
+    "order": [
+      {
+        "signal": "sleep_h",
+        "first_change_t": -13
+      },
+      {
+        "signal": "hrv_ms",
+        "first_change_t": -10
+      },
+      {
+        "signal": "resting_hr",
+        "first_change_t": -7
+      },
+      {
+        "signal": "steps",
+        "first_change_t": -5
+      }
+    ]
+  },
+  "connections": {
+    "edges": [
+      {
+        "from": "sleep_h",
+        "to": "hrv_ms",
+        "relation": "precedes"
+      },
+      {
+        "from": "hrv_ms",
+        "to": "resting_hr",
+        "relation": "precedes"
+      },
+      {
+        "from": "resting_hr",
+        "to": "steps",
+        "relation": "precedes"
+      }
+    ],
+    "hypothesis": "Declining sleep preceded a drop in HRV, a rise in resting HR, and a fall in activity."
+  },
+  "missing_evidence": {
+    "items": [
+      {
+        "name": "Wearable history",
+        "present": true
+      },
+      {
+        "name": "Sleep",
+        "present": true
+      },
+      {
+        "name": "HRV",
+        "present": true
+      },
+      {
+        "name": "Temperature",
+        "present": true
+      },
+      {
+        "name": "Medication change",
+        "present": false
+      },
+      {
+        "name": "Recent illness",
+        "present": false
+      },
+      {
+        "name": "Lab measurement",
+        "present": false
+      }
+    ],
+    "most_valuable_missing": [
+      "Recent illness",
+      "Medication change"
+    ]
+  },
+  "self_check": {
+    "pattern_evidence": "Strong",
+    "data_completeness": "Moderate",
+    "interpretation_confidence": 68
+  },
+  "counterfactuals": {
+    "current_deviation": 78,
+    "signals": {
+      "hrv_ms": {
+        "new_deviation": 51,
+        "note": "If HRV stayed near baseline"
+      },
+      "sleep_h": {
+        "new_deviation": 62,
+        "note": "If sleep stayed near baseline"
+      },
+      "steps": {
+        "new_deviation": 71,
+        "note": "If activity stayed normal"
+      }
+    }
+  },
+  "trajectories": [
+    {
+      "name": "Scenario A",
+      "assumption": "Return toward baseline",
+      "points": [
+        78,
+        70,
+        60,
+        48,
+        36
+      ]
+    },
+    {
+      "name": "Scenario B",
+      "assumption": "Plateau at current level",
+      "points": [
+        78,
+        77,
+        78,
+        76,
+        77
+      ]
+    },
+    {
+      "name": "Scenario C",
+      "assumption": "Continued divergence",
+      "points": [
+        78,
+        84,
+        90,
+        95,
+        99
+      ]
+    }
+  ]
+}
