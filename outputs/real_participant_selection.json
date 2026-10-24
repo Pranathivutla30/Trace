@@ -1,0 +1,181 @@
+{
+  "dataset": "PhysioNet Wearable Device Dataset from Induced Stress and Structured Exercise Sessions v1.0.1",
+  "experiment": "STRESS",
+  "participants_discovered": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "f01",
+    "f02",
+    "f03",
+    "f04",
+    "f05",
+    "f06",
+    "f07",
+    "f08",
+    "f09",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f14_a",
+    "f14_b",
+    "f15",
+    "f16",
+    "f17",
+    "f18"
+  ],
+  "participants_eligible": [
+    "f16",
+    "f13",
+    "f08",
+    "f10",
+    "f05",
+    "f06",
+    "f09",
+    "S04",
+    "f03",
+    "f01",
+    "S11",
+    "S08",
+    "S10",
+    "f02",
+    "f04",
+    "f14_b",
+    "S06",
+    "S16",
+    "S15",
+    "S12",
+    "S03",
+    "S05",
+    "S09",
+    "S13",
+    "S17",
+    "S02",
+    "S07",
+    "f11",
+    "S14",
+    "f12",
+    "S01",
+    "f18",
+    "S18",
+    "f17",
+    "f15",
+    "f07"
+  ],
+  "participants_excluded": [
+    {
+      "participant_id": "f14_a",
+      "number_of_windows": 12,
+      "mean_data_quality": 0.974,
+      "exclusion_reasons": [
+        "only 12 windows (<15)"
+      ]
+    }
+  ],
+  "ranking_method": "Per-participant provisional baseline (first 20% of windows); later-window multivariate z-deviation and signal agreement; components (baseline/later separation, peak deviation, signal agreement, sustained change fraction, data quality) min-max normalized across participants, then combined with visible weights {'separation': 0.3, 'peak_deviation': 0.2, 'signal_agreement': 0.2, 'sustained_fraction': 0.2, 'data_quality': 0.1}. Event overlap is supporting context only.",
+  "top_5": [
+    {
+      "participant_id": "f16",
+      "selection_score": 0.8369,
+      "number_of_windows": 55,
+      "mean_data_quality": 0.9807,
+      "baseline_windows": 11,
+      "post_baseline_mean_deviation": 24.4972,
+      "peak_deviation": 142.8945,
+      "mean_signal_agreement": 0.3591,
+      "sustained_change_fraction": 0.8636,
+      "event_overlap_fraction": 0.2368,
+      "strongest_changed_signals": [
+        "eda_mean",
+        "temperature_c",
+        "heart_rate_bpm"
+      ]
+    },
+    {
+      "participant_id": "f13",
+      "selection_score": 0.597,
+      "number_of_windows": 65,
+      "mean_data_quality": 0.9897,
+      "baseline_windows": 13,
+      "post_baseline_mean_deviation": 17.8467,
+      "peak_deviation": 30.1368,
+      "mean_signal_agreement": 0.251,
+      "sustained_change_fraction": 0.9808,
+      "event_overlap_fraction": 0.2353,
+      "strongest_changed_signals": [
+        "temperature_c",
+        "eda_mean",
+        "heart_rate_bpm"
+      ]
+    },
+    {
+      "participant_id": "f08",
+      "selection_score": 0.5303,
+      "number_of_windows": 54,
+      "mean_data_quality": 0.981,
+      "baseline_windows": 11,
+      "post_baseline_mean_deviation": 5.733,
+      "peak_deviation": 14.6252,
+      "mean_signal_agreement": 0.574,
+      "sustained_change_fraction": 1.0,
+      "event_overlap_fraction": 0.2326,
+      "strongest_changed_signals": [
+        "temperature_c",
+        "eda_mean",
+        "activity_mean"
+      ]
+    },
+    {
+      "participant_id": "f10",
+      "selection_score": 0.5288,
+      "number_of_windows": 46,
+      "mean_data_quality": 0.9891,
+      "baseline_windows": 9,
+      "post_baseline_mean_deviation": 4.8093,
+      "peak_deviation": 10.8304,
+      "mean_signal_agreement": 0.5743,
+      "sustained_change_fraction": 0.973,
+      "event_overlap_fraction": 0.2222,
+      "strongest_changed_signals": [
+        "temperature_c",
+        "eda_mean",
+        "heart_rate_bpm"
+      ]
+    },
+    {
+      "participant_id": "f05",
+      "selection_score": 0.5258,
+      "number_of_windows": 77,
+      "mean_data_quality": 0.9939,
+      "baseline_windows": 15,
+      "post_baseline_mean_deviation": 9.558,
+      "peak_deviation": 14.8307,
+      "mean_signal_agreement": 0.3548,
+      "sustained_change_fraction": 1.0,
+      "event_overlap_fraction": 0.1935,
+      "strongest_changed_signals": [
+        "temperature_c",
+        "eda_mean",
+        "hrv_rmssd_ms"
+      ]
+    }
+  ],
+  "recommended_participant": "f16",
+  "disclaimer": "This ranking identifies recordings that provide clear temporal variation for demonstrating TRACE. It is not a ranking of participant health, stress severity, disease risk, or clinical status."
+}

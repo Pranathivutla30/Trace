@@ -1,0 +1,100 @@
+{
+  "participant_id": "S12",
+  "data_source": "PhysioNet Wearable Device Dataset from Induced Stress and Structured Exercise Sessions v1.0.1",
+  "experiment": "STRESS",
+  "raw_signals_used": [
+    "HR",
+    "IBI",
+    "EDA",
+    "TEMP",
+    "ACC"
+  ],
+  "window_size_seconds": 60,
+  "number_of_windows": 27,
+  "recording_duration_minutes": 26.7214,
+  "available_event_tags": [
+    {
+      "name": "event_1",
+      "elapsed_minutes": 1.75
+    },
+    {
+      "name": "event_2",
+      "elapsed_minutes": 5.0667
+    },
+    {
+      "name": "event_3",
+      "elapsed_minutes": 6.7833
+    },
+    {
+      "name": "event_4",
+      "elapsed_minutes": 8.6
+    },
+    {
+      "name": "event_5",
+      "elapsed_minutes": 14.5167
+    },
+    {
+      "name": "event_6",
+      "elapsed_minutes": 16.7
+    },
+    {
+      "name": "event_7",
+      "elapsed_minutes": 22.35
+    },
+    {
+      "name": "event_8",
+      "elapsed_minutes": 22.85
+    },
+    {
+      "name": "event_9",
+      "elapsed_minutes": 23.4667
+    },
+    {
+      "name": "event_10",
+      "elapsed_minutes": 23.9167
+    },
+    {
+      "name": "event_11",
+      "elapsed_minutes": 24.7333
+    },
+    {
+      "name": "event_12",
+      "elapsed_minutes": 25.25
+    },
+    {
+      "name": "event_13",
+      "elapsed_minutes": 25.8167
+    }
+  ],
+  "missingness": {
+    "heart_rate_bpm": 0.0,
+    "hrv_rmssd_ms": 0.0,
+    "eda_mean": 0.0,
+    "temperature_c": 0.0,
+    "activity_mean": 0.0
+  },
+  "signal_summary": {
+    "HR": {
+      "sampling_hz": 1.0,
+      "n_raw_samples": 1594
+    },
+    "EDA": {
+      "sampling_hz": 4.0,
+      "n_raw_samples": 6414
+    },
+    "TEMP": {
+      "sampling_hz": 4.0,
+      "n_raw_samples": 6408
+    },
+    "ACC": {
+      "sampling_hz": 32.0,
+      "n_raw_samples": 51306
+    },
+    "IBI": {
+      "sampling_hz": null,
+      "n_raw_samples": 1410,
+      "note": "irregular inter-beat intervals; not a fixed rate"
+    }
+  },
+  "disclaimer": "This output contains processed wearable measurements from a research dataset. TRACE uses these measurements for exploratory temporal analysis and does not provide diagnosis or medical advice."
+}
