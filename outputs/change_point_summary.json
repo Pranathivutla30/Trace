@@ -1,0 +1,27 @@
+{
+  "patient_id": "patient_001",
+  "method": "Weighted blend of normalized baseline deviation (45%), IsolationForest anomaly score (35%), and multivariate signal agreement (20%), with sustained change-point detection using a baseline-derived elevated threshold.",
+  "baseline_period": "Days 1-14",
+  "detected_change_day": 20,
+  "detected_change_date": "2025-01-20",
+  "confidence": 0.5898,
+  "temporal_change_score_at_detection": 0.3846,
+  "signal_onsets": {
+    "sleep_hours": 20,
+    "hrv_ms": 21,
+    "resting_hr_bpm": 23,
+    "steps": 25,
+    "temperature_f": 28,
+    "respiratory_rate": 20,
+    "eda": 21,
+    "fatigue_score": 19,
+    "stress_score": 22
+  },
+  "signals_active_at_change_point": [
+    "sleep_hours",
+    "resting_hr_bpm",
+    "respiratory_rate",
+    "fatigue_score"
+  ],
+  "explanation": "TRACE detected the earliest sustained departure from the patient's personal baseline around Day 20 (2025-01-20). At detection the temporal change score was 0.385, above the baseline-derived elevated threshold of 0.254. The change was supported by coordinated movement across 4 physiological signal(s): sleep_hours, resting_hr_bpm, respiratory_rate, fatigue_score. This reflects a sustained multivariate shift, not a single noisy day. This is temporal pattern detection only and is not a diagnosis."
+}

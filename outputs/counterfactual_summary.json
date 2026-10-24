@@ -1,0 +1,145 @@
+{
+  "patient_id": "patient_001",
+  "current_day": 30,
+  "detected_change_day": 20,
+  "original_deviation_score": 17.5373,
+  "single_signal_counterfactuals": [
+    {
+      "feature": "stress_score",
+      "original_value": 6.5,
+      "baseline_value": 2.0229,
+      "counterfactual_value": 2.0229,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 15.4782,
+      "absolute_reduction": 2.0591,
+      "percentage_reduction": 11.74,
+      "rank": 1,
+      "interpretation": "If stress_score had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 11.74% (from 17.5373 to 15.4782). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    {
+      "feature": "sleep_hours",
+      "original_value": 5.17,
+      "baseline_value": 7.5486,
+      "counterfactual_value": 7.5486,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 15.6305,
+      "absolute_reduction": 1.9067,
+      "percentage_reduction": 10.87,
+      "rank": 2,
+      "interpretation": "If sleep_hours had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 10.87% (from 17.5373 to 15.6305). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    {
+      "feature": "eda",
+      "original_value": 5.57,
+      "baseline_value": 1.9529,
+      "counterfactual_value": 1.9529,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 15.8861,
+      "absolute_reduction": 1.6512,
+      "percentage_reduction": 9.42,
+      "rank": 3,
+      "interpretation": "If eda had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 9.42% (from 17.5373 to 15.8861). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    {
+      "feature": "fatigue_score",
+      "original_value": 5.65,
+      "baseline_value": 1.9286,
+      "counterfactual_value": 1.9286,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 16.1133,
+      "absolute_reduction": 1.424,
+      "percentage_reduction": 8.12,
+      "rank": 4,
+      "interpretation": "If fatigue_score had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 8.12% (from 17.5373 to 16.1133). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    {
+      "feature": "hrv_ms",
+      "original_value": 44.7,
+      "baseline_value": 61.9857,
+      "counterfactual_value": 61.9857,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 16.7057,
+      "absolute_reduction": 0.8315,
+      "percentage_reduction": 4.74,
+      "rank": 5,
+      "interpretation": "If hrv_ms had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 4.74% (from 17.5373 to 16.7057). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    {
+      "feature": "resting_hr_bpm",
+      "original_value": 69.3,
+      "baseline_value": 62.6357,
+      "counterfactual_value": 62.6357,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 16.8743,
+      "absolute_reduction": 0.6629,
+      "percentage_reduction": 3.78,
+      "rank": 6,
+      "interpretation": "If resting_hr_bpm had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 3.78% (from 17.5373 to 16.8743). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    {
+      "feature": "steps",
+      "original_value": 5591.0,
+      "baseline_value": 8818.7857,
+      "counterfactual_value": 8818.7857,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 17.1205,
+      "absolute_reduction": 0.4168,
+      "percentage_reduction": 2.38,
+      "rank": 7,
+      "interpretation": "If steps had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 2.38% (from 17.5373 to 17.1205). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    {
+      "feature": "temperature_f",
+      "original_value": 98.61,
+      "baseline_value": 98.04,
+      "counterfactual_value": 98.04,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 17.3673,
+      "absolute_reduction": 0.17,
+      "percentage_reduction": 0.97,
+      "rank": 8,
+      "interpretation": "If temperature_f had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 0.97% (from 17.5373 to 17.3673). This describes mathematical sensitivity of the score, not a health outcome."
+    },
+    {
+      "feature": "respiratory_rate",
+      "original_value": 15.9,
+      "baseline_value": 14.95,
+      "counterfactual_value": 14.95,
+      "original_deviation_score": 17.5373,
+      "counterfactual_deviation_score": 17.4927,
+      "absolute_reduction": 0.0446,
+      "percentage_reduction": 0.25,
+      "rank": 9,
+      "interpretation": "If respiratory_rate had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 0.25% (from 17.5373 to 17.4927). This describes mathematical sensitivity of the score, not a health outcome."
+    }
+  ],
+  "most_influential_counterfactual": {
+    "feature": "stress_score",
+    "original_value": 6.5,
+    "baseline_value": 2.0229,
+    "counterfactual_value": 2.0229,
+    "original_deviation_score": 17.5373,
+    "counterfactual_deviation_score": 15.4782,
+    "absolute_reduction": 2.0591,
+    "percentage_reduction": 11.74,
+    "interpretation": "If stress_score had remained near this patient's personal baseline while all other measured signals stayed unchanged, the overall physiological deviation score would decrease by 11.74% (from 17.5373 to 15.4782). This describes mathematical sensitivity of the score, not a health outcome."
+  },
+  "combined_counterfactual": {
+    "features_normalized": [
+      "stress_score",
+      "sleep_hours",
+      "eda"
+    ],
+    "original_deviation_score": 17.5373,
+    "counterfactual_deviation_score": 11.0065,
+    "absolute_reduction": 6.5308,
+    "percentage_reduction": 37.24,
+    "interpretation": "If the three most influential measured signals (stress_score, sleep_hours, eda) had simultaneously remained near this patient's personal baseline, the overall deviation score would decrease by 37.24% (from 17.5373 to 11.0065). TRACE can explore signal combinations, not only one variable at a time. This is mathematical sensitivity, not a clinical prediction."
+  },
+  "interpretation_confidence_context": {
+    "interpretation_confidence": 66.76,
+    "confidence_band": "Moderate",
+    "note": "Interpretation confidence is carried over from the AI Self-Check feature and is NOT recalculated here. Counterfactual results describe the mathematical sensitivity of TRACE's deviation score to the measured signals, not diagnostic confidence or clinical outcomes."
+  },
+  "disclaimer": "Counterfactual results show mathematical sensitivity of TRACE's deviation score to measured signals. They do not predict clinical outcomes or represent treatment recommendations."
+}

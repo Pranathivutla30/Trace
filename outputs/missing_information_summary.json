@@ -1,0 +1,110 @@
+{
+  "patient_id": "patient_001",
+  "detected_change_day": 20,
+  "current_uncertainty": 1.9849,
+  "uncertainty_method": "Shannon entropy (base 2) of the normalized hypothesis support distribution; expected post-observation entropy computed over prototype outcome priors. Variable-to-hypothesis mappings are prototype demo assumptions, not medical conclusions.",
+  "current_hypothesis_distribution": {
+    "Physiological stress pattern": 0.2923,
+    "Activity / behavioral pattern": 0.2746,
+    "Recovery / autonomic pattern": 0.2331,
+    "Possible measurement/context effect": 0.2001
+  },
+  "candidate_information": [
+    {
+      "variable": "subjective_stress_level",
+      "rank": 1,
+      "information_gain": 0.0724,
+      "expected_uncertainty": 1.9125,
+      "uncertainty_reduction_percent": 3.65,
+      "related_hypotheses": [
+        "Activity / behavioral pattern",
+        "Physiological stress pattern",
+        "Recovery / autonomic pattern"
+      ],
+      "reasoning": "Stress-related signals (eda, stress_score, fatigue_score) were active around the change point. A subjective stress rating would help confirm or down-weight the stress interpretation path.",
+      "example_question": "How would you rate your stress level around Day 20 \u2014 low, moderate, or high?"
+    },
+    {
+      "variable": "sleep_schedule_change",
+      "rank": 2,
+      "information_gain": 0.0553,
+      "expected_uncertainty": 1.9295,
+      "uncertainty_reduction_percent": 2.79,
+      "related_hypotheses": [
+        "Activity / behavioral pattern",
+        "Physiological stress pattern",
+        "Recovery / autonomic pattern"
+      ],
+      "reasoning": "Sleep was among the earliest signals to move away from the personal baseline (onset Day 20). Knowing whether the patient's schedule changed around the detected change point (Day 20) could help distinguish behavioral/contextual explanations from broader physiological patterns.",
+      "example_question": "Did your usual sleep schedule change around the time TRACE detected the first sustained shift (Day 20)?"
+    },
+    {
+      "variable": "ferritin_or_iron_status",
+      "rank": 3,
+      "information_gain": 0.0192,
+      "expected_uncertainty": 1.9656,
+      "uncertainty_reduction_percent": 0.97,
+      "related_hypotheses": [
+        "Activity / behavioral pattern",
+        "Physiological stress pattern",
+        "Recovery / autonomic pattern"
+      ],
+      "reasoning": "Reduced HRV and activity after Day 20 are consistent with several explanations. Iron/ferritin context would help separate recovery/autonomic from activity explanations.",
+      "example_question": "Do you have any recent information about your iron or ferritin status?"
+    },
+    {
+      "variable": "recent_illness",
+      "rank": 4,
+      "information_gain": 0.0163,
+      "expected_uncertainty": 1.9686,
+      "uncertainty_reduction_percent": 0.82,
+      "related_hypotheses": [
+        "Activity / behavioral pattern",
+        "Physiological stress pattern",
+        "Possible measurement/context effect",
+        "Recovery / autonomic pattern"
+      ],
+      "reasoning": "Several autonomic signals (resting_hr_bpm, respiratory_rate, temperature_f) shifted after Day 20. A recent illness flag would help weigh recovery/context explanations.",
+      "example_question": "Were you unwell (e.g. a cold or infection) around the time TRACE detected the first sustained shift (Day 20)?"
+    },
+    {
+      "variable": "recent_intense_exercise",
+      "rank": 5,
+      "information_gain": 0.0153,
+      "expected_uncertainty": 1.9696,
+      "uncertainty_reduction_percent": 0.77,
+      "related_hypotheses": [
+        "Activity / behavioral pattern",
+        "Physiological stress pattern",
+        "Possible measurement/context effect",
+        "Recovery / autonomic pattern"
+      ],
+      "reasoning": "Activity signals shifted after the change point (steps onset Day 25). Recent intense exercise could help separate activity/behavioral explanations from recovery ones.",
+      "example_question": "Did you have any unusually intense exercise or training around Day 20?"
+    },
+    {
+      "variable": "medication_change",
+      "rank": 6,
+      "information_gain": 0.0023,
+      "expected_uncertainty": 1.9826,
+      "uncertainty_reduction_percent": 0.12,
+      "related_hypotheses": [
+        "Activity / behavioral pattern",
+        "Physiological stress pattern",
+        "Possible measurement/context effect",
+        "Recovery / autonomic pattern"
+      ],
+      "reasoning": "A medication change around Day 20 could shift autonomic readings, so it helps weigh recovery and measurement/context explanations.",
+      "example_question": "Did any medication or supplement change around Day 20?"
+    }
+  ],
+  "most_valuable_missing_information": {
+    "variable": "subjective_stress_level",
+    "information_gain": 0.0724,
+    "expected_uncertainty": 1.9125,
+    "uncertainty_reduction_percent": 3.65,
+    "reasoning": "Stress-related signals (eda, stress_score, fatigue_score) were active around the change point. A subjective stress rating would help confirm or down-weight the stress interpretation path.",
+    "example_question": "How would you rate your stress level around Day 20 \u2014 low, moderate, or high?"
+  },
+  "disclaimer": "Information-value estimates are exploratory reasoning aids based on prototype assumptions. They do not represent medical advice, diagnostic testing recommendations, or clinical necessity."
+}

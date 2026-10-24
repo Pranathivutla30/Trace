@@ -1,0 +1,51 @@
+{
+  "patient_id": "patient_001",
+  "detected_change_day": 20,
+  "component_scores": {
+    "deviation_strength": 1.0,
+    "signal_agreement": 0.7778,
+    "temporal_persistence": 1.0,
+    "data_completeness": 1.0,
+    "relationship_consistency": 0.9372,
+    "robustness": 1.0
+  },
+  "interpretation_uncertainty_penalty": 0.2977,
+  "interpretation_confidence": 66.76,
+  "confidence_band": "Moderate",
+  "sensitivity_analysis": {
+    "original_change_day": 20,
+    "alternative_change_days": {
+      "original_threshold": 20,
+      "threshold_minus_10pct": 20,
+      "threshold_plus_10pct": 20,
+      "stricter_persistence": 20
+    },
+    "max_change_day_shift": 0
+  },
+  "evidence_supporting_interpretation": [
+    "Deviation is sustained: 100% of post-change days stayed elevated above the baseline-derived threshold.",
+    "Multiple signals agree: average signal agreement after the change point was 0.78.",
+    "Post-change temporal scores separate clearly from the baseline period.",
+    "Change point is robust: it moved at most 0 day under +/-10% threshold and stricter-persistence tests.",
+    "Sensor data is complete (no missing physiological values).",
+    "Signal relationships are consistent (score 0.94)."
+  ],
+  "evidence_limiting_interpretation": [
+    "Competing hypothesis groups remain similar in support (normalized interpretation uncertainty 0.99).",
+    "Contextual information is missing; the most valuable would be 'subjective_stress_level'."
+  ],
+  "what_would_increase_confidence": [
+    "Collect 'subjective_stress_level' to reduce interpretation ambiguity between hypothesis groups.",
+    "Evidence that more clearly separates one hypothesis group from the others would lower interpretation uncertainty.",
+    "A longer observation window would further test whether the pattern persists."
+  ],
+  "weights_used": {
+    "deviation_strength": 0.22,
+    "signal_agreement": 0.18,
+    "temporal_persistence": 0.18,
+    "data_completeness": 0.12,
+    "relationship_consistency": 0.15,
+    "robustness": 0.15
+  },
+  "disclaimer": "TRACE confidence reflects the consistency and robustness of the available data and analytical interpretation. It is not diagnostic confidence, clinical certainty, or probability of disease."
+}
