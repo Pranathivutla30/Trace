@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Frontend build on save",
+      "trigger": "PostFileSave",
+      "description": "Runs the Vite production build whenever a frontend source file is saved, so build-breaking changes are caught immediately.",
+      "matcher": "frontend/src/.*\\.(jsx?|css)$",
+      "action": {
+        "type": "command",
+        "command": "cd frontend && npm run build",
+        "timeout": 180
+      }
+    }
+  ]
+}
