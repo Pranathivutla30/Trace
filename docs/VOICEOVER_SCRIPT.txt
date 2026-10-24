@@ -1,0 +1,62 @@
+TRACE — Voice-over narration (paste into ElevenLabs / CapCut TTS)
+Target ~2:45. Read calmly, ~150 words/min. Pause ~1 second between blocks.
+Recommended voice: calm, warm, professional (e.g. ElevenLabs "Rachel" or "Adam").
+
+================================================================
+BLOCK 1  (~0:22)
+================================================================
+This is TRACE — Temporal Reasoning and Analysis for Clinical Exploration.
+Wearables and health apps collect weeks of data, yet when something feels wrong,
+the hardest question is: when did it actually start? Most health AI looks at
+today and guesses a disease. TRACE does the opposite — it finds the moment the
+story changed, and explains it. It is an exploratory, non-diagnostic tool, and we
+built the whole thing with Kiro.
+
+================================================================
+BLOCK 2  (~0:26)
+================================================================
+You begin with a short profile, saved privately in your browser. TRACE then
+greets you by name — but your profile never touches the analysis. The first thing
+it builds is your personal baseline: what is normal for this specific person
+across sleep, heart-rate variability, resting heart rate, activity, and
+temperature. Every reading is later judged against this person's own normal, not
+a population average.
+
+================================================================
+BLOCK 3  (~0:30)
+================================================================
+This is the heart of TRACE. It rewinds the timeline to find the earliest point
+where signals started shifting together. Notice the real insight: the story did
+not begin when symptoms would appear — it began earlier. Around Day minus ten,
+fatigue and sleep start drifting, then heart-rate variability follows, then
+resting heart rate rises, and activity drops. TRACE marks that first coordinated
+shift as where the story changed.
+
+================================================================
+BLOCK 4  (~0:30)
+================================================================
+Instead of separate alarms, TRACE connects the signals into one chain — this
+moved, then this, then this. It is careful to call this an association to
+investigate, never proof of a cause. Then it does something unusual for health
+AI: it admits what it does not know. Here it flags a missing subjective stress
+reading as the single piece of information that would most reduce its uncertainty.
+
+================================================================
+BLOCK 5  (~0:26)
+================================================================
+Crucially, TRACE checks itself. It weighs the evidence and reports honest
+confidence — here, a strong pattern on complete data, but only sixty-seven
+percent certain. That number is how sure TRACE is of its own reading — not a
+health risk. And it is fully explainable: this what-if shows exactly which
+signals drove the result, so TRACE is never a black box.
+
+================================================================
+BLOCK 6  (~0:31)
+================================================================
+Finally, TRACE explores alternative paths — recover, hold, or drift — as
+scenarios to think about, not predictions. And it is not just a demo: switch to
+real PhysioNet wearable data and TRACE detects the change around minute thirteen,
+where a trained model, tested on a participant it never saw, scores how unusual
+each moment looks. We built every layer spec-driven in Kiro, with steering docs
+enforcing our non-diagnostic safety rules. TRACE — find where the story changed.
+It's live; the link is below.
