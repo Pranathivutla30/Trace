@@ -4,7 +4,14 @@
 
 import { motion } from "framer-motion";
 import { Card, CardHead, Icon } from "./ui.jsx";
+import { humanizeLabel } from "../config/format.js";
+import { SIGNALS, signalMeta } from "../config/signals.js";
 import { useReducedMotion } from "../hooks/useUi.js";
+
+// Prefer the shared signal label for known signal keys; otherwise humanize.
+function prettyLabel(name) {
+  return name in SIGNALS ? signalMeta(name).label : humanizeLabel(name);
+}
 
 export default function MissingEvidence({ missing }) {
   const reduced = useReducedMotion();
@@ -15,7 +22,8 @@ export default function MissingEvidence({ missing }) {
 
   return (
     <Card id="missing" delay={0.15}>
-      <CardHead title="What Should We Learn Next?" eyebrow="BioMissing · evidence that would most reduce uncertainty" />
+      <CardHead title="BioMissing — What to Learn Next" eyebrow="The info that would help explain this the most" />
+      <p className="help-line">TRACE can't see everything. These are the missing details that would make the picture clearer.</p>
 
       {ranked.map((name, i) => {
         const weight = 1 - i / (ranked.length + 1);
@@ -28,7 +36,7 @@ export default function MissingEvidence({ missing }) {
                     <Icon name="star" size={15} fill="currentColor" />
                   </span>
                 )}
-                {name}
+                {prettyLabel(name)}
               </span>
               <small>{i === 0 ? "Most valuable" : `#${i + 1}`}</small>
             </div>
@@ -51,7 +59,7 @@ export default function MissingEvidence({ missing }) {
           {present.map((p) => (
             <span className="chip" key={p}>
               <Icon name="check" size={13} strokeWidth="2.6" />
-              {p}
+              {prettyLabel(p)}
             </span>
           ))}
         </div>

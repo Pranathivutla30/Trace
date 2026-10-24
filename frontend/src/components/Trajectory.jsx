@@ -39,7 +39,8 @@ export default function Trajectory({ trajectories }) {
 
   return (
     <Card id="trajectories" className="span-5" delay={0.1}>
-      <CardHead title="Where Could the Path Diverge?" eyebrow="HealthFork · alternative trajectories" />
+      <CardHead title="HealthFork — Where Could the Path Diverge?" eyebrow="Three possible paths from here" />
+      <p className="help-line">Three "what could happen" examples: getting back to normal, staying the same, or drifting further.</p>
 
       <div ref={ref} style={{ height: 210 }}>
         {inView && (
@@ -97,7 +98,7 @@ export default function Trajectory({ trajectories }) {
         ))}
       </div>
 
-      <p className="caption">Simulated trajectories, not predictions.</p>
+      <p className="caption">Example scenarios to explore — not predictions of what will happen.</p>
     </Card>
   );
 }

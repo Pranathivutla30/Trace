@@ -60,6 +60,8 @@ class AnalysisResponse(BaseModel):
     self_check: dict | None = None
     counterfactuals: dict | None = None
     trajectories: list[dict] | None = None
+    # Present only for sources that carry a trained-model evaluation (real f16).
+    ml_transition_model: dict | None = None
 
 
 class CounterfactualRequest(BaseModel):

@@ -8,6 +8,16 @@ import { fmtT } from "../config/format.js";
 import { Card, CardHead } from "./ui.jsx";
 import { useReducedMotion } from "../hooks/useUi.js";
 
+// Plain-English version of the backend relation words (display only).
+function relationText(rel) {
+  const map = {
+    precedes: "changed first",
+    "co-moves": "moved together",
+    "moves inversely": "moved the opposite way",
+  };
+  return map[rel] || rel;
+}
+
 export default function Connections({ connections, temporalTrace, timeUnit }) {
   const reduced = useReducedMotion();
   if (!connections) return null;
@@ -27,8 +37,9 @@ export default function Connections({ connections, temporalTrace, timeUnit }) {
 
   return (
     <Card id="connections" delay={0.1}>
-      <CardHead title="What Changed Together?" eyebrow="ReverseHealth · observed signal relationships" />
+      <CardHead title="ReverseHealth — What Changed Together" eyebrow="Which signals moved around the same time" />
 
+      <p className="help-line">The order below shows which signal started changing first, then the next, and so on.</p>
       {connections.hypothesis && <p className="hypo">{connections.hypothesis}</p>}
 
       <div className="flow" role="list">
@@ -59,7 +70,8 @@ export default function Connections({ connections, temporalTrace, timeUnit }) {
               <div className="flow-body">
                 <div>
                   <b>{meta.label}</b>
-                  {rel && i < chain.length - 1 && <em>{rel} ↓</em>}
+                  {meta.full && <span className="sig-full inline">({meta.full})</span>}
+                  {rel && i < chain.length - 1 && <em>{relationText(rel)} ↓</em>}
                 </div>
                 <span className="flow-time">
                   {typeof firstChange[key] === "number" ? fmtT(firstChange[key], timeUnit) : ""}
@@ -70,7 +82,7 @@ export default function Connections({ connections, temporalTrace, timeUnit }) {
         })}
       </div>
 
-      <p className="caption">Observed temporal associations, not proven causation.</p>
+      <p className="caption">These signals moved together in time — that doesn't mean one caused the other.</p>
     </Card>
   );
 }

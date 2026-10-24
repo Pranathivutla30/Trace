@@ -6,7 +6,7 @@ import SourceToggle from "./SourceToggle.jsx";
 import { Icon } from "./ui.jsx";
 import { useReducedMotion } from "../hooks/useUi.js";
 
-export default function TopBar({ title, subtitle, sources, source, onChange, loading, onCta }) {
+export default function TopBar({ title, subtitle, sources, source, onChange, loading, onCta, profileControl }) {
   const reduced = useReducedMotion();
   return (
     <motion.header
@@ -21,10 +21,13 @@ export default function TopBar({ title, subtitle, sources, source, onChange, loa
       </div>
       <div className="header-actions">
         <SourceToggle sources={sources} source={source} onChange={onChange} loading={loading} />
-        <button className="cta" onClick={onCta}>
-          <Icon name="sliders" size={16} />
-          Run what-if
-        </button>
+        {onCta && (
+          <button className="cta" onClick={onCta}>
+            <Icon name="sliders" size={16} />
+            Run what-if
+          </button>
+        )}
+        {profileControl}
       </div>
     </motion.header>
   );

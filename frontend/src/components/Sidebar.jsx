@@ -8,19 +8,21 @@ import { useReducedMotion } from "../hooks/useUi.js";
 export const NAV = [
   { id: "overview", label: "Overview", icon: "dashboard" },
   { id: "whatif", label: "What If", icon: "sliders" },
-  { id: "selfcheck", label: "Self-Check", icon: "shield" },
-  { id: "trace", label: "Change Point", icon: "pulse" },
-  { id: "connections", label: "Connections", icon: "link" },
-  { id: "missing", label: "Missing Evidence", icon: "search" },
+  { id: "selfcheck", label: "How Sure", icon: "shield" },
+  { id: "trace", label: "Where It Changed", icon: "pulse" },
+  { id: "mlanomaly", label: "Unusual Moments", icon: "pulse" },
+  { id: "connections", label: "What Moved Together", icon: "link" },
+  { id: "missing", label: "What's Missing", icon: "search" },
   { id: "baseline", label: "Baseline", icon: "layers" },
-  { id: "trajectories", label: "Trajectories", icon: "branch" },
+  { id: "trajectories", label: "What's Next", icon: "branch" },
 ];
 
 const spring = { type: "spring", stiffness: 420, damping: 36 };
 
-export default function Sidebar({ active, onNav, counts = {}, patientId, subtitle, theme, onTheme }) {
+export default function Sidebar({ active, onNav, counts = {}, patientId, userName = "", subtitle, theme, onTheme, hiddenIds = [] }) {
   const reduced = useReducedMotion();
   const transition = reduced ? { duration: 0 } : spring;
+  const items = NAV.filter((item) => !hiddenIds.includes(item.id));
 
   return (
     <aside className="sidebar">
@@ -35,7 +37,7 @@ export default function Sidebar({ active, onNav, counts = {}, patientId, subtitl
       </div>
 
       <nav className="nav" aria-label="Sections">
-        {NAV.map((item) => {
+        {items.map((item) => {
           const isActive = active === item.id;
           return (
             <button
@@ -67,11 +69,11 @@ export default function Sidebar({ active, onNav, counts = {}, patientId, subtitl
       <div className="side-foot">
         <div className="who">
           <span className="avatar">
-            {String(patientId || "--").slice(0, 3)}
+            {String(userName || patientId || "--").slice(0, 2).toUpperCase()}
             <span className="online" />
           </span>
           <div className="who-text">
-            <b>Patient {patientId || "--"}</b>
+            <b>{userName || `Patient ${patientId || "--"}`}</b>
             <span>{subtitle}</span>
           </div>
         </div>

@@ -92,6 +92,7 @@ def patient_analysis(patient_id: str, source: str = Query(...)):
         "self_check": doc.get("self_check"),
         "counterfactuals": doc.get("counterfactuals"),
         "trajectories": doc.get("trajectories"),
+        "ml_transition_model": doc.get("ml_transition_model"),
     }
 
 
