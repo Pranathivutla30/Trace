@@ -46,21 +46,79 @@ investigation — clearly labeled as context only, never fed into the analysis.
 
 ## Architecture
 
-```
-ai_ml/ (Python analysis + trained model)
-   │   outputs/*.json
-   ▼
-ai_ml/export_for_backend.py   (adapter → backend JSON contract)
-   │   ai_ml/output/{source}_{id}.json
-   ▼
-backend/ (FastAPI — serves JSON, runs no ML, reads no raw data)
-   ▼
-frontend/ (React + Vite — "Clinical Glass" dashboard)
+TRACE is a **one-directional pipeline** — data flows left to right, and each
+layer has a single job. By the time results reach the UI they are immutable, so
+the dashboard can never alter an analysis value.
+
+```mermaid
+flowchart LR
+    subgraph AIML["🧠 ai_ml/ — Python analysis + trained model"]
+        GEN["generate_patient.py<br/>synthetic 30-day data"]
+        FEAT["7 feature scripts<br/>baseline · change · relationships<br/>missing · self-check · what-if · trajectories"]
+        REAL["PhysioNet prep + select<br/>→ participant f16"]
+        MODEL["train_transition_model.py<br/>IsolationForest (seed 42)"]
+    end
+
+    ADAPT["🔌 export_for_backend.py<br/>adapter → backend JSON contract"]
+    BACK["⚙️ backend/ — FastAPI<br/>serves JSON · no ML · no raw data"]
+    FRONT["💻 frontend/ — React + Vite<br/>Clinical Glass dashboard"]
+    USER(["👤 User"])
+
+    GEN --> FEAT
+    FEAT --> ADAPT
+    REAL --> ADAPT
+    MODEL --> ADAPT
+    ADAPT -->|"ai_ml/output/{source}_{id}.json"| BACK
+    BACK -->|"/api/..."| FRONT
+    FRONT --> USER
+
+    PROFILE["🔒 Onboarding profile<br/>localStorage only"]
+    PROFILE -.->|"display / context ONLY<br/>never enters analysis"| FRONT
 ```
 
-The flow is one-directional, so analysis values are immutable by the time they
-reach the UI. The onboarding profile is a deliberate firewall: it is
-frontend-only and never influences any AI/ML result.
+If Mermaid doesn't render, here's the same flow:
+
+```
+  ┌──────────────────────────────────────────────┐
+  │  ai_ml/  — Python analysis + trained model     │
+  │  generate_patient → 7 feature scripts          │
+  │  PhysioNet prep/select (→ f16) · IsolationForest│
+  └───────────────────────┬────────────────────────┘
+                          │  outputs/*.json
+                          ▼
+  ┌──────────────────────────────────────────────┐
+  │  export_for_backend.py  (adapter)              │
+  │  → ai_ml/output/{source}_{id}.json             │
+  └───────────────────────┬────────────────────────┘
+                          │
+                          ▼
+  ┌──────────────────────────────────────────────┐
+  │  backend/  — FastAPI                            │
+  │  serves JSON · runs no ML · reads no raw data   │
+  └───────────────────────┬────────────────────────┘
+                          │  /api/...
+                          ▼
+  ┌──────────────────────────────────────────────┐
+  │  frontend/  — React + Vite (Clinical Glass)     │
+  └──────────────────────────────────────────────┘
+          ▲
+          ┆  display / context ONLY (never enters analysis)
+  ┌───────┴────────────────┐
+  │  Onboarding profile      │
+  │  (localStorage only)     │
+  └──────────────────────────┘
+```
+
+| Layer | Responsibility | Does **not** |
+|---|---|---|
+| `ai_ml/` | Compute all analysis + train the model | — |
+| `export_for_backend.py` | Reshape pipeline output into the backend contract | change any value |
+| `backend/` (FastAPI) | Serve standardized JSON | run ML or read raw data |
+| `frontend/` (React) | Render the dashboard | compute or alter analysis |
+
+> **Privacy firewall:** the onboarding profile lives only in the browser
+> (`localStorage`). It personalizes the UI and the "Your Context" card, but is
+> **never** sent to the backend or fed into any AI/ML result.
 
 ---
 
