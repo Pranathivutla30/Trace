@@ -22,7 +22,7 @@ VALID_SOURCES = {"synthetic", "real"}
 
 SOURCES = [
     {"id": "synthetic", "label": "Synthetic Demo", "patient_id": "001"},
-    {"id": "real", "label": "Real Wearable Data", "patient_id": "S01"},
+    {"id": "real", "label": "Real Wearable Data (de-identified)", "patient_id": "f16"},
 ]
 
 
