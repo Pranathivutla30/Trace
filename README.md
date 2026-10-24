@@ -4,6 +4,11 @@
 
 **Hackachusetts track: Healthcare & Biotech**
 
+**🔗 Live demo:** https://pranathivutla30.github.io/Trace/ — the full dashboard
+runs in the browser with the real analysis bundled as static data (no backend
+needed). Open it, finish the short onboarding, and explore both the Synthetic
+Demo and the Real Wearable Data (f16).
+
 TRACE is an exploratory, **non-diagnostic** tool that analyzes longitudinal
 physiological data (wearable signals over time) to answer four questions a raw
 chart can't: **when** did a person's pattern start changing, **what** signals
