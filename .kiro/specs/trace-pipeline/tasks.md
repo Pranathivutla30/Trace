@@ -1,0 +1,40 @@
+# TRACE — Implementation Tasks
+
+- [x] 1. Generate the synthetic 30-day patient (seed 42) — `generate_patient.py`
+  - _Requirements: R1_
+- [x] 2. Feature 1 — Baseline / BioShadow — `baseline.py`
+  - _Requirements: R2_
+- [x] 3. Feature 2 — Change point / BioTimeMachine — `change_detection.py`
+  - _Requirements: R2_
+- [x] 4. Feature 3 — Relationships / ReverseHealth — `relationships.py`
+  - _Requirements: R2_
+- [x] 5. Feature 4 — Missing info / BioMissing — `missing_information.py`
+  - _Requirements: R2_
+- [x] 6. Feature 5 — AI Self-Check — `self_check.py`
+  - _Requirements: R2_
+- [x] 7. Feature 6 — Counterfactual Patient — `counterfactual.py`
+  - _Requirements: R2_
+- [x] 8. Feature 7 — Trajectories / HealthFork — `trajectories.py`
+  - _Requirements: R2_
+- [x] 9. Unified synthetic analysis JSON — `build_analysis.py`
+  - _Requirements: R2, R5_
+- [x] 10. Real PhysioNet preprocessing into 60s windows — `prepare_physionet.py`
+  - _Requirements: R3_
+- [x] 11. Data-driven participant selection (→ f16) — `select_real_participant.py`
+  - _Requirements: R3_
+- [x] 12. Core temporal analysis on real f16 — `analyze_real_patient.py`
+  - _Requirements: R3_
+- [x] 13. Train held-out IsolationForest anomaly model — `train_transition_model.py`
+  - _Requirements: R4_
+- [x] 14. Adapter: pipeline output → backend contract — `export_for_backend.py`
+  - _Requirements: R5_
+- [x] 15. FastAPI backend serving live JSON (+ ML passthrough)
+  - _Requirements: R5_
+- [x] 16. React dashboard: all 7 features + ML anomaly, source-aware
+  - _Requirements: R2, R4, R6_
+- [x] 17. Onboarding + profile persistence (localStorage, returning user, edit)
+  - _Requirements: R6_
+- [x] 18. "Your Context" card (profile vs. investigation, context-only)
+  - _Requirements: R6_
+- [x] 19. Accessibility / plain-language wording pass + safe disclaimers
+  - _Requirements: R7_
